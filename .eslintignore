@@ -1,6 +1,6 @@
-blueprints/**/files/**
-coverage/**
-dist/**
-build/**
-node_modules/**
-src/index.html
+dist/*
+build/*
+config/*
+src/assets/iconfont.js
+node_modules/*
+webpack**
