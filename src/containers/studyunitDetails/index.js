@@ -3,6 +3,7 @@ import './index.scss';
 
 export default class StudyunitDetails extends Component {
   render() {
+    console.log(this.props.location);
     return (
       <div className="ets-ui-wrap" >
         <div className="ets-act-hd" />

@@ -29,10 +29,8 @@ const Root = () => (
           <Switch>
             <Router exact path="/" component={App} />
             <Router path="/docs" component={Docs} />
-            <Router path="/studyunit" component={StudyunitDetails} >
-              <Router path="/studyunit/:id" component={StudyunitDetails} />
-            </Router>
-
+            <Router path="/studyunit" component={Studyunit} />
+            <Router path="/studyunitDetails" component={StudyunitDetails} />
           </Switch>
         </div>
       </div>
