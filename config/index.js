@@ -5,7 +5,7 @@ module.exports = {
     host: 'localhost',
     port: 8086,
     proxyTable: {},
-    useEslint: true,
+    useEslint: false,
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
