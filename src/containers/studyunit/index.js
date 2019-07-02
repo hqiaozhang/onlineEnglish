@@ -89,23 +89,22 @@ export default class Studyunit extends Component {
                 }
                 {/* step start */}
                 {
-                  steps.length === 0 ? '' :
-                    <div className="ets-ui-step-container">
+                  steps.length === 0 ? '' : <div className="ets-ui-step-container">
                     <div className="ets-ui-steps-wrap ets-expanded">
-                        <ul className="ets-ui-steps">
+                      <ul className="ets-ui-steps">
                         {
-                            steps.map((step, index) => (
-                              <li key={index} className="ets-ui-step-bd">
-                                <div className="ets-ui-step ets-passed">
-                                  <div className="ets-ui-step-index">1</div>
-                                  <div className="ets-ui-step-type ets-overflow">{step.title}</div>
-                                  <div className="ets-ui-step-title ets-overflow">{step.contain}</div>
-                                </div>
-                              </li>
-                            ))
-                          }
+                          steps.map((step, index) => (
+                            <li key={index} className="ets-ui-step-bd">
+                              <div className="ets-ui-step ets-passed">
+                                <div className="ets-ui-step-index">1</div>
+                                <div className="ets-ui-step-type ets-overflow">{step.title}</div>
+                                <div className="ets-ui-step-title ets-overflow">{step.contain}</div>
+                              </div>
+                            </li>
+                          ))
+                        }
                       </ul>
-                      </div>
+                    </div>
                   </div>
                 }
               </div>
