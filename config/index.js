@@ -4,7 +4,13 @@ module.exports = {
   dev: {
     host: 'localhost',
     port: 8086,
-    proxyTable: {},
+    proxyTable: {
+      '/healthcloud': {
+        target: 'http://localhost:3000', // 开发环境
+        changeOrigin: true, //如果接口跨域，需要进行这个参数配置
+        secure: false,  // 如果是https接口，需要配置这个参数
+      }
+    },
     useEslint: false,
     autoOpenBrowser: false,
     errorOverlay: true,

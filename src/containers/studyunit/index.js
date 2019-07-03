@@ -1,21 +1,28 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {fetch} from '@/util/request';
+
+import {bindActionCreators} from 'redux';
+import Redux from '../../redux';
+// import * as studyunitActions from '@/redux/reduces/studyunit';
 import StudyunitDetails from '../studyunitDetails';
 import './index.scss';
 
-const mapStateToProps = ({studyunit}) => ({
-  unitId: studyunit.unitId
+const mapStateToProps = (state) => ({
+  unitId: state.unitId,
+  utilList: state.utilList
 });
-@connect(mapStateToProps)
+const mapDispatchToProps = (dispatch) => ({
+  action: bindActionCreators(Redux.actions, dispatch)
+});
+@connect(mapStateToProps, mapDispatchToProps)
 export default class Studyunit extends Component {
   constructor(props) {
     super(props);
     this.state = {
       steps: [],
       cardActive: 0,
-      utilList: [],
-      isShowDetatils: false,
+      isShowDetails: false,
       utilDetails: [],
       utilDetail: []
     };
@@ -39,13 +46,13 @@ export default class Studyunit extends Component {
     const {utilDetails, cardActive} = this.state;
     const {unitId} = this.props;
     this.setState({
-      isShowDetatils: true,
-      utilDetail: utilDetails[`unit5_${unitId}`][`u${unitId}0${index + 1}`]
+      isShowDetails: true,
+      utilDetail: utilDetails[`unit5_${unitId}`][`u${unitId}_${cardActive}0${index + 1}`]
     });
   }
   handleClose = () => {
     this.setState({
-      isShowDetatils: false
+      isShowDetails: false
     });
   }
   /**
@@ -69,16 +76,10 @@ export default class Studyunit extends Component {
     });
   }
 
+
   /**
-   * @description 获取单元数据
+   * @description 获取单元详情
    */
-  requestStudyunit() {
-    fetch('fetchStudyunit', (data) => {
-      this.setState({
-        utilList: data
-      });
-    });
-  }
   requestStudyunitDetails() {
     fetch('fetchUnitDetails', data => {
       this.setState({
@@ -90,13 +91,19 @@ export default class Studyunit extends Component {
    * @description render之后执行
    */
   componentDidMount() {
-    this.requestStudyunit();
+    const {rquestStudyunit} = this.props.action;
+    rquestStudyunit();
+
+    // this.props.rquestStudyunit();
+
     this.requestStudyunitDetails();
   }
   render() {
     const {
-      steps, cardActive, utilList, isShowDetatils, utilDetail
+      steps, cardActive, isShowDetails, utilDetail
     } = this.state;
+    console.log(this.props);
+    const {utilList} = this.props;
     if (utilList.length === 0) {
       return '';
     }
@@ -143,13 +150,13 @@ export default class Studyunit extends Component {
                   }
                   {/* step start */}
                   {
-                    steps.length === 0 ? '' : <div className="ets-ui-step-container">
+                    !steps || steps.length === 0 ? '' : <div className="ets-ui-step-container">
                       <div className="ets-ui-steps-wrap ets-expanded">
                         <ul className="ets-ui-steps">
                           {
                             steps.map((step, index) => (
                               <li key={index} className="ets-ui-step-bd">
-                                <div className="ets-ui-step ets-passed" onClick={this.handleStep.bind(this, index)}>
+                                <div className={`ets-ui-step ${step.isDetail !== false ? 'ets-passed' : ''}`} onClick={this.handleStep.bind(this, index)}>
                                   <div className="ets-ui-step-index">{index + 1}</div>
                                   <div className="ets-ui-step-type ets-overflow">{step.title}</div>
                                   <div className="ets-ui-step-title ets-overflow">{step.contain}</div>
@@ -167,8 +174,9 @@ export default class Studyunit extends Component {
             </div>
           </div>
         </div>
+        {/* 查看详情 */}
         {
-          isShowDetatils ? <StudyunitDetails data={utilDetail} handleClose={this.handleClose} /> : ''
+          isShowDetails ? <StudyunitDetails data={utilDetail} handleClose={this.handleClose} /> : ''
         }
 
       </div>

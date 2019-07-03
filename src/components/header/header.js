@@ -8,7 +8,7 @@ export default class Header extends Component {
     return (
       <div className="ue-header" >
         <div className="ue-inner" >
-          <Link to="/studyunit">My course</Link>
+          <Link to="/studyunit">MY COURSE</Link>
           <Link to="/docs">STUDY TOOLS</Link>
         </div>
       </div>

@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 项目默认全局配置项
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-02 11:49:14
+ * @Last Modified time: 2019-07-03 15:13:55
  */
 
 //  const search = global.location.search
@@ -23,7 +23,7 @@ export default {
   // 主要用于前后台联调，websocket代理服务器域名，当proxy为true时，所有websocket都会连接到这个域名
   websocketProxyHost: 'ws://192.168.5.16:8082/protal/bdcds',
   // 线上服务器域名，当访问URL时不加mock或proxy时，所有ajax请求都会发送到这个域名
-  host: 'http://58.83.189.150:18888/backendApi',
+  host: '/healthcloud',
   // websocket线上服务器域名，当访问URL时不加mock或proxy时，所有websocket都会连接到这个域名
   websocketHost: 'ws://58.83.189.232:18001/healthcloud',
 };

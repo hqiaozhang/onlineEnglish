@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-02 13:12:27
+ * @Last Modified time: 2019-07-03 13:38:14
  */
 
 export default{
@@ -21,6 +21,18 @@ export default{
             img: 'https://cns2.ef-cdn.com/Juno/12/22/52/v/122252/GE_5.1.1_talking_web.jpg',
             title: 'Talking about flight arrangements',
             id: 1
+          }, {
+            img: 'https://cns.ef-cdn.com/Juno/12/22/53/v/122253/GE_5.1.2_checking_web.jpg',
+            title: 'Checking in for a flight',
+            id: 2
+          }, {
+            img: 'https://cns.ef-cdn.com/Juno/51/09/11/v/510911/5.1.3.jpg',
+            title: 'Getting to your hotel',
+            id: 3
+          }, {
+            img: 'https://cns.ef-cdn.com/Juno/51/09/12/v/510912/5.1.4.jpg',
+            title: "Letting someone know you've arrived",
+            id: 4
           },
         ]
       }, {
@@ -31,6 +43,18 @@ export default{
             img: 'https://cns.ef-cdn.com/Juno/12/22/56/v/122256/GE_5.2.1_talking_web_V2.jpg',
             title: 'Comparing options',
             id: 1
+          }, {
+            img: 'https://cns1.ef-cdn.com/Juno/12/22/57/v/122257/GE_5.2.2_describing_web_V2.jpg',
+            title: 'Making decisions',
+            id: 2
+          }, {
+            img: 'https://cns1.ef-cdn.com/Juno/12/22/58/v/122258/GE_5.2.3_recommending_web.jpg',
+            title: 'Discussing the details',
+            id: 3
+          }, {
+            img: 'https://cns1.ef-cdn.com/Juno/12/22/55/v/122255/GE_5.2.4_describing_web_V2.jpg',
+            title: 'Summarizing decisions',
+            id: 4
           },
         ]
       }, {
@@ -41,6 +65,18 @@ export default{
             img: 'https://cns1.ef-cdn.com/Juno/12/22/60/v/122260/GE_5.3.1_explaining_web.jpg',
             title: 'Explaining how you met someone',
             id: 1
+          }, {
+            img: 'https://cns.ef-cdn.com/Juno/12/22/61/v/122261/GE_5.3.2_writing_web.jpg',
+            title: 'Talking about a relationship',
+            id: 2
+          }, {
+            img: 'https://cns.ef-cdn.com/Juno/12/22/62/v/122262/GE_5.3.3_talking_web_v2.jpg',
+            title: 'Talking about a good experience',
+            id: 3
+          }, {
+            img: 'https://cns.ef-cdn.com/Juno/12/22/59/v/122259/GE_5.3.4_telling_web.jpg',
+            title: 'Telling a story about a bad experience',
+            id: 4
           },
         ]
       }, {
@@ -51,6 +87,19 @@ export default{
             img: 'https://cns2.ef-cdn.com/Juno/12/22/64/v/122264/GE_5.4.1_making_web.jpg',
             title: 'Making a restaurant reservation',
             id: 1
+          },
+          {
+            img: 'https://cns1.ef-cdn.com/Juno/12/22/65/v/122265/GE_5.4.2_talking_web.jpg',
+            title: 'Arriving at a restaurant',
+            id: 2
+          }, {
+            img: 'https://cns1.ef-cdn.com/Juno/12/22/66/v/122266/GE_5.4.3_ordering_web.jpg',
+            title: 'Ordering food in a restaurant',
+            id: 3
+          }, {
+            img: 'https://cns1.ef-cdn.com/Juno/12/22/63/v/122263/GE_5.4.4_asking_web.jpg',
+            title: 'Asking for the check and paying the bill',
+            id: 4
           }
         ]
       },
@@ -65,17 +114,17 @@ export default{
             id: 1
           },
           {
-            img: 'https://cns1.ef-cdn.com/Juno/12/22/68/v/122268/GE_5.5.1_talking_web.jpg',
+            img: 'https://cns.ef-cdn.com/Juno/12/22/69/v/122269/GE_5.5.2_describing_web.jpg',
             title: 'Describing your favorite movie',
             id: 2
           },
           {
-            img: 'https://cns1.ef-cdn.com/Juno/12/22/68/v/122268/GE_5.5.1_talking_web.jpg',
+            img: 'https://cns.ef-cdn.com/Juno/12/22/70/v/122270/GE_5.5.3_choosing_web.jpg',
             title: 'Choosing a movie to see',
             id: 3,
           },
           {
-            img: 'https://cns1.ef-cdn.com/Juno/12/22/68/v/122268/GE_5.5.1_talking_web.jpg',
+            img: 'https://cns.ef-cdn.com/Juno/12/22/67/v/122267/GE_5.5.4_writing_web.jpg',
             title: 'Writing about a movie',
             id: 4
           }
@@ -105,6 +154,7 @@ export default{
               }, {
                 title: '最终任务',
                 contain: "谈论人的服装 Talking about people's outfits",
+                isDetail: false,
               }
             ],
           }, {
@@ -114,16 +164,19 @@ export default{
             steps: [
               {
                 title: '词汇',
-                contain: '衣服和配饰',
+                contain: '衣服和配饰 Clothing and accessories',
+                isDetail: false,
               }, {
                 title: '表达',
-                contain: '谈论时尚潮流',
+                contain: '谈论时尚潮流 Talking about fashion trends',
               }, {
                 title: '语法',
-                contain: '关于衣服的看法',
+                contain: '关于衣服的看法 Opinions about clothes',
+                isDetail: false,
               }, {
                 title: '最终任务',
-                contain: '讨论着装',
+                contain: '讨论着装 Discussing outfits',
+                isDetail: false,
               }
             ],
           }, {
@@ -133,16 +186,18 @@ export default{
             steps: [
               {
                 title: '词汇',
-                contain: '修饰衣服的形容词',
+                contain: '修饰衣服的形容词 Adjectives for clothes',
               }, {
                 title: '词汇',
-                contain: '面料',
+                contain: '面料 Fabrics',
+                isDetail: false,
               }, {
                 title: '语法',
-                contain: '建议与义务',
+                contain: '建议与义务 Advice and obligation',
               }, {
                 title: '最终任务',
-                contain: '我该穿什么？',
+                contain: '我该穿什么？ What should I wear?',
+                isDetail: false,
               }
             ],
           }, {
@@ -162,26 +217,9 @@ export default{
               }, {
                 title: '最终任务',
                 contain: '称赞朋友 Complimenting a friend',
+                isDetail: false,
               }
             ],
-          }
-        ],
-        steps: [
-          {
-            title: '语汇',
-            contain: '有关时尚的形容词',
-          }, {
-            title: '语法',
-            contain: '多词动词',
-          }, {
-            title: '表达',
-            contain: '表达偏爱',
-          }, {
-            title: '表达',
-            contain: '决定',
-          }, {
-            title: '最终任务',
-            contain: '谈论人的服装',
           }
         ],
       },

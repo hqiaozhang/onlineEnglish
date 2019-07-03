@@ -3,8 +3,8 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {hot} from 'react-hot-loader';
 import Header from '@/components/header/header';
-import Store from '@/redux';
-import DevTools from '@/redux/DevTools';
+import Redux from '@/redux';
+// import DevTools from '@/redux/DevTools';
 import App from '@/containers/app';
 import Docs from '@/containers/docs';
 import Studyunit from '@/containers/studyunit';
@@ -21,11 +21,11 @@ const Router = ({component: Component, children, ...rest}) => (
 
 const Root = () => (
   <BrowserRouter>
-    <Provider store={Store}>
+    <Provider store={Redux.store}>
       <div className="main_app">
         <Header />
         <div className="router-content">
-          {__DEVELOPMENT__ && <DevTools />}
+          {/* {__DEVELOPMENT__ && <DevTools />} */}
           <Switch>
             <Router exact path="/" component={App} />
             <Router path="/docs" component={Docs} />
