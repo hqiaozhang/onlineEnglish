@@ -1,41 +1,33 @@
-/*
- * @Author: zhanghongqiao
- * @Date: 2019-07-04 16:41:13
- * @Email: 991034150@qq.com
- * @Description: 我的课程
- * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-04 18:15:03
- */
-
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {fetch} from '@/util/request';
 
-import {
-  rquestStudyunit,
-  requestStudyunitDetails,
-  changeCurrentLevel
-} from '@/actions';
+import {bindActionCreators} from 'redux';
+import * as studyunitActions from '@/redux/reduces/studyunit';
+import Redux from '@/redux';
+
 import StudyunitDetails from '../studyunitDetails';
 import './index.scss';
 
 const mapStateToProps = ({studyunit}) => ({
   unitId: studyunit.unitId,
   utilList: studyunit.utilList,
-  utilDetails: studyunit.utilDetails,
+  utilDetails: studyunit.utilDetails
 });
 
-class Studyunit extends Component {
+const mapDispatchToProps = (dispatch) => ({
+  action: bindActionCreators(Redux.actions, dispatch),
+  dispatch
+});
+@connect(mapStateToProps, mapDispatchToProps)
+export default class Studyunit extends Component {
   constructor(props) {
     super(props);
     this.state = {
       steps: [],
       cardActive: 0,
       isShowDetails: false,
-      utilDetail: [],
-      dropdown: false,
-      currentLevelDoc: '5-Elementary',
-      currentLevel: 5,
-      dropdownList: ['1-Beginner', '2-Beginner', '3-Beginner', '4-Elementary', '5-Elementary', '6-Elementary']
+      utilDetail: []
     };
   }
   /**
@@ -48,15 +40,12 @@ class Studyunit extends Component {
       cardActive: item.id
     });
   }
-  /**
-   * @description 点击每一个单元小节(查看详情)
-   */
   handleStep = (index) => {
-    const {cardActive, currentLevel} = this.state;
+    const {cardActive} = this.state;
     const {utilDetails, unitId} = this.props;
     this.setState({
       isShowDetails: true,
-      utilDetail: utilDetails[`unit${currentLevel}_${unitId}`][`u${unitId}_${cardActive}0${index + 1}`]
+      utilDetail: utilDetails[`unit5_${unitId}`][`u${unitId}_${cardActive}0${index + 1}`]
     });
   }
   /**
@@ -87,43 +76,17 @@ class Studyunit extends Component {
       cardActive: ''
     });
   }
-  // 点击单元下拉
-  handleDropdown(falg) {
-    this.setState({
-      dropdown: !falg
-    });
-  }
-  /**
-   * @description 点击单元级别
-   * @param {*} index
-   */
-  handleMenu(menu, index) {
-    const {dispatch} = this.props;
-    dispatch({type: 'INITUNITID'});
-
-    this.setState({
-      currentLevelDoc: menu,
-      currentLevel: index + 1
-    });
-    dispatch(changeCurrentLevel(index + 1));
-    // dispatch(rquestStudyunit(this.state.currentLevel));
-  }
   /**
    * @description render之后执行
    */
   componentDidMount() {
-    const {dispatch} = this.props;
-    // 单元课程
-    dispatch(rquestStudyunit(this.state.currentLevel));
-    // 单元详情
-    dispatch(requestStudyunitDetails());
-  }
-  componentWillReceiveProps(nextProps) {
-    console.log('nextnextnextnext=====', this.state.currentLevel);
+    const {action} = this.props;
+    action.rquestStudyunit();
+    action.requestStudyunitDetails();
   }
   render() {
     const {
-      steps, cardActive, isShowDetails, utilDetail, dropdown, dropdownList, currentLevelDoc
+      steps, cardActive, isShowDetails, utilDetail
     } = this.state;
     const {utilList} = this.props;
     if (utilList.length === 0) {
@@ -135,19 +98,11 @@ class Studyunit extends Component {
         <div className="ets-ui-wrap">
           <div className="ets-chl-nav-container">
             <div className="ets-chl-nav">
-              <div className="ets-chl-current-level" data-action="toggle" onClick={this.handleDropdown.bind(this, dropdown)}>
-                <ul className={`ets-chl-options-course ${dropdown ? 'show' : ''}`} >
-                  {
-                    dropdownList.map((menu, index) => (
-                      <li key={index} className={menu === currentLevelDoc ? 'ets-active' : ''} onClick={this.handleMenu.bind(this, menu, index)}>{menu}</li>
-                    ))
-                  }
-
-                </ul>
+              <span className="ets-chl-current-level" data-action="toggle">
                 <span className="ets-chl-current-level-course">General English:</span>
-                <span className="ets-chl-current-level-name">{currentLevelDoc}</span>
+                <span className="ets-chl-current-level-name">5-Elementary</span>
                 <span className="ets-chl-btn" />
-              </div>
+              </span>
             </div>
           </div>
           <div className="ets-ui-unn">
@@ -208,8 +163,8 @@ class Studyunit extends Component {
         {
           isShowDetails ? <StudyunitDetails data={utilDetail} handleClose={this.handleClose} /> : ''
         }
+
       </div>
     );
   }
 }
-export default connect(mapStateToProps)(Studyunit);

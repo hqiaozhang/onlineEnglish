@@ -7,7 +7,6 @@ const studyunitSuccess = (data) => ({
   data,
 });
 
-// 单元详情
 const studyunitDetailsSuccess = (data) => ({
   type: types.STUDYUNITDETAILSSUCCESS,
   data,
@@ -18,22 +17,11 @@ const requestFailed = (data) => ({
   type: types.REQUEST_FAILED,
   data: '请求出错'
 });
-
-// 查询单元
-export const rquestStudyunit = (id) => dispatch => fetch(`fetchStudyunit${id}`, (data) => {
-  console.log(id, data);
+export const rquestStudyunit = () => dispatch => fetch('fetchStudyunit', (data) => {
   dispatch(studyunitSuccess(data));
 });
 
-// 查询单元详情
 export const requestStudyunitDetails = () => dispatch => fetch('fetchUnitDetails', (data) => {
   dispatch(studyunitDetailsSuccess(data));
 });
-
-const changeLevel = (level) => ({
-  type: 'CHANGECURRENTLEVEL',
-  level,
-});
-
-export const changeCurrentLevel = (level) => dispatch => () => (dispatch(changeLevel(level)));
 

@@ -4,14 +4,14 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-04 17:50:48
+ * @Last Modified time: 2019-07-02 17:22:56
  */
-import fetchStudyunit5 from './list5';
-import fetchStudyunit6 from './list6';
+import fetchStudyunit from './list';
+import fetchStudyunitDetails from './details_.js';
 import fetchUnitDetails from './details';
 
 export {
-  fetchStudyunit5,
-  fetchStudyunit6,
+  fetchStudyunit,
+  fetchStudyunitDetails,
   fetchUnitDetails
 };

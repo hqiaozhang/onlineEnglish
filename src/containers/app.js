@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import Studyunit from '@/containers/studyunit';
 
-import * as homeActions from '../redux/reduces/home';
+import * as homeActions from '../redux/reducers/home';
 
 
 @connect(
@@ -13,17 +13,8 @@ import * as homeActions from '../redux/reduces/home';
 class App extends Component {
   state = {
   }
-  componentWillMount() {
-    const {initalLogo} = this.props;
-    initalLogo();
-  }
-  handleBrowserChange = () => {
-    const {history, changeRoute} = this.props;
-    changeRoute();
-    history.push('/docs');
-  }
+
   render() {
-    const {home: {movelogo}} = this.props;
     return (
       <div className="home">
          Welcome to onlineEnglisth

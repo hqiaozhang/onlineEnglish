@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as homeActions from '../redux/reducers/home';
+import * as homeActions from '../redux/reduces/home';
 
 @connect(
   state => ({home: state.home}),

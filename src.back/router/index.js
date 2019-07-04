@@ -3,12 +3,13 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {hot} from 'react-hot-loader';
 import Header from '@/components/header/header';
-import configureStore from '@/redux/store';
+import Redux from '@/redux';
+// import Store from '@/redux';
 import App from '@/containers/app';
 import Docs from '@/containers/docs';
 import Studyunit from '@/containers/studyunit';
 
-const store = configureStore();
+
 const Router = ({component: Component, children, ...rest}) => (
   <Route
     {...rest}
@@ -20,7 +21,7 @@ const Router = ({component: Component, children, ...rest}) => (
 
 const Root = () => (
   <BrowserRouter>
-    <Provider store={store}>
+    <Provider store={Redux.store}>
       <div className="main_app">
         <Header />
         <div className="router-content">

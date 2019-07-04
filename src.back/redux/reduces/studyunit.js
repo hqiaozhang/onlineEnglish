@@ -4,18 +4,16 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-03 17:07:03
+ * @Last Modified time: 2019-07-04 14:04:49
  */
 
-
-import {fetch} from '@/util/request';
-
-const REQUESTSTUDYUNIT = 'REQUESTSTUDYUNIT';
+import * as types from '../action/types';
 
 const initialState = {
-  unitId: 6
+  unitId: 6,
+  utilList: [],
+  utilDetails: []
 };
-
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
@@ -27,25 +25,15 @@ export default function reducer(state = initialState, action = {}) {
       return Object.assign({}, state, {
         unitId: ++initialState.unitId
       });
-    case REQUESTSTUDYUNIT:
-      console.log(action);
-      return {
-        ...state,
-        data: action
-      };
+    case types.STUDYUNITSUCCESS:
+      return Object.assign({}, state, {
+        utilList: action.data
+      });
+    case types.STUDYUNITDETAILSSUCCESS:
+      return Object.assign({}, state, {
+        utilDetails: action.data
+      });
     default:
       return state;
   }
-}
-const fetchURL = 'http://localhost:3000/';
-
-export function rquestStudyunit(user) {
-  return {
-    types: [REQUESTSTUDYUNIT],
-    promise: fetch('fetchStudyunit', {user}, data => {
-      console.log(data);
-
-      return data;
-    }),
-  };
 }

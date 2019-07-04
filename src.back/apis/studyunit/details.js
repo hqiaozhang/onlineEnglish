@@ -68,7 +68,6 @@ export default {
           }]
         },
         u6_203: {
-          stepName: '关于衣服的看法',
           grammarVideo: {
             scripts: []
           },

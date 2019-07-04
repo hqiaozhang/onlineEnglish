@@ -4,16 +4,17 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-03 18:07:56
+ * @Last Modified time: 2019-07-04 18:16:20
  */
 
-import * as types from '../action/types';
+import * as types from '@/actions/types';
 
 const initialState = {
   unitId: 6,
   utilList: [],
+  utilDetails: [],
+  currentLevel: 5,
 };
-
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
@@ -25,13 +26,24 @@ export default function reducer(state = initialState, action = {}) {
       return Object.assign({}, state, {
         unitId: ++initialState.unitId
       });
+    case 'INITUNITID':
+      return Object.assign({}, state, {
+        unitId: 1
+      });
+    case 'CHANGECURRENTLEVEL':
+      console.log(action);
+      return Object.assign({}, state, {
+        currentLevel: 6
+      });
     case types.STUDYUNITSUCCESS:
-      console.log(state);
       return Object.assign({}, state, {
         utilList: action.data
+      });
+    case types.STUDYUNITDETAILSSUCCESS:
+      return Object.assign({}, state, {
+        utilDetails: action.data
       });
     default:
       return state;
   }
 }
-
