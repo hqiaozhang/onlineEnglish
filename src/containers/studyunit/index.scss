@@ -246,3 +246,28 @@
 .show {
   display: block;
 }
+
+.ets-ui-unn-ft {
+  background: url(./images/ets-ui-main.png) top center no-repeat;
+  height: 50px;
+}
+.ets-ui-unn-dots {
+  text-align: center;
+  padding: 15px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ets-ui-unn-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url(./images/ets-ui-main.png) -789px -360px no-repeat;
+  margin: 0 5px;
+}
+.ets-ui-unn-dot.ets-active {
+  background-position: -789px -380px;
+}

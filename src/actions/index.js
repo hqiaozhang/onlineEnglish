@@ -21,19 +21,17 @@ const requestFailed = (data) => ({
 
 // 查询单元
 export const rquestStudyunit = (id) => dispatch => fetch(`fetchStudyunit${id}`, (data) => {
-  console.log(id, data);
   dispatch(studyunitSuccess(data));
 });
 
 // 查询单元详情
-export const requestStudyunitDetails = () => dispatch => fetch('fetchUnitDetails', (data) => {
+export const requestStudyunitDetails = (id) => dispatch => fetch(`fetchUnitDetails${id}`, (data) => {
+  console.log('================', id, data);
   dispatch(studyunitDetailsSuccess(data));
 });
 
-const changeLevel = (level) => ({
+
+export const changeCurrentLevel = (level) => ({
   type: 'CHANGECURRENTLEVEL',
   level,
 });
-
-export const changeCurrentLevel = (level) => dispatch => () => (dispatch(changeLevel(level)));
-

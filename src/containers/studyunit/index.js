@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-04 18:15:03
+ * @Last Modified time: 2019-07-05 17:50:38
  */
 
 import React, {Component} from 'react';
@@ -12,30 +12,32 @@ import {connect} from 'react-redux';
 
 import {
   rquestStudyunit,
-  requestStudyunitDetails,
-  changeCurrentLevel
+  requestStudyunitDetails
 } from '@/actions';
 import StudyunitDetails from '../studyunitDetails';
+import Steps from './steps';
 import './index.scss';
 
 const mapStateToProps = ({studyunit}) => ({
   unitId: studyunit.unitId,
   utilList: studyunit.utilList,
   utilDetails: studyunit.utilDetails,
+  currentLevel: studyunit.currentLevel
 });
 
 class Studyunit extends Component {
   constructor(props) {
     super(props);
+    const utilDetail = sessionStorage.getItem('utilDetail');
     this.state = {
       steps: [],
       cardActive: 0,
-      isShowDetails: false,
-      utilDetail: [],
+      isShowDetails: sessionStorage.getItem('isShowDetails') !== 'false',
+      utilDetail: utilDetail ? JSON.parse(utilDetail) : [],
       dropdown: false,
-      currentLevelDoc: '5-Elementary',
-      currentLevel: 5,
-      dropdownList: ['1-Beginner', '2-Beginner', '3-Beginner', '4-Elementary', '5-Elementary', '6-Elementary']
+
+      dropdownList: ['1-Beginner', '2-Beginner', '3-Beginner', '4-Elementary', '5-Elementary', '6-Elementary'],
+      currentLevelDoc: ''
     };
   }
   /**
@@ -52,17 +54,21 @@ class Studyunit extends Component {
    * @description 点击每一个单元小节(查看详情)
    */
   handleStep = (index) => {
-    const {cardActive, currentLevel} = this.state;
-    const {utilDetails, unitId} = this.props;
+    const {cardActive} = this.state;
+    const {utilDetails, unitId, currentLevel} = this.props;
+    const utilDetail = utilDetails[`unit${currentLevel}_${unitId}`][`u${unitId}_${cardActive}0${index + 1}`];
+    sessionStorage.setItem('utilDetail', JSON.stringify(utilDetail));
+    sessionStorage.setItem('isShowDetails', true);
     this.setState({
       isShowDetails: true,
-      utilDetail: utilDetails[`unit${currentLevel}_${unitId}`][`u${unitId}_${cardActive}0${index + 1}`]
+      utilDetail
     });
   }
   /**
    * @description 点击详情页关闭
    */
   handleClose = () => {
+    sessionStorage.setItem('isShowDetails', false);
     this.setState({
       isShowDetails: false
     });
@@ -71,7 +77,7 @@ class Studyunit extends Component {
    * @description 点击上一页
    */
   handlePrev() {
-    this.props.dispatch({type: 'PREV'});
+    this.props.dispatch({type: 'PREV', unitId: this.props.unitId});
     this.setState({
       steps: [],
       cardActive: ''
@@ -81,7 +87,7 @@ class Studyunit extends Component {
    * @description 点击下一页
    */
   handleNext() {
-    this.props.dispatch({type: 'NEXT'});
+    this.props.dispatch({type: 'NEXT', unitId: this.props.unitId});
     this.setState({
       steps: [],
       cardActive: ''
@@ -100,26 +106,33 @@ class Studyunit extends Component {
   handleMenu(menu, index) {
     const {dispatch} = this.props;
     dispatch({type: 'INITUNITID'});
-
+    dispatch({type: 'CHANGECURRENTLEVEL', level: index + 1});
     this.setState({
-      currentLevelDoc: menu,
-      currentLevel: index + 1
+      // currentLevelDoc: menu,
+      steps: [],
+      cardActive: ''
     });
-    dispatch(changeCurrentLevel(index + 1));
-    // dispatch(rquestStudyunit(this.state.currentLevel));
   }
   /**
    * @description render之后执行
    */
   componentDidMount() {
-    const {dispatch} = this.props;
+    const {dispatch, currentLevel} = this.props;
+
     // 单元课程
-    dispatch(rquestStudyunit(this.state.currentLevel));
+    dispatch(rquestStudyunit(currentLevel));
     // 单元详情
-    dispatch(requestStudyunitDetails());
+    dispatch(requestStudyunitDetails(currentLevel));
   }
   componentWillReceiveProps(nextProps) {
-    console.log('nextnextnextnext=====', this.state.currentLevel);
+    this.setState({
+      currentLevelDoc: this.state.dropdownList[this.props.currentLevel - 1]
+    });
+    // 级别发生改变，重新获取数据
+    if (nextProps.currentLevel !== this.props.currentLevel) {
+      this.props.dispatch(rquestStudyunit(nextProps.currentLevel));
+      this.props.dispatch(requestStudyunitDetails(nextProps.currentLevel));
+    }
   }
   render() {
     const {
@@ -142,7 +155,6 @@ class Studyunit extends Component {
                       <li key={index} className={menu === currentLevelDoc ? 'ets-active' : ''} onClick={this.handleMenu.bind(this, menu, index)}>{menu}</li>
                     ))
                   }
-
                 </ul>
                 <span className="ets-chl-current-level-course">General English:</span>
                 <span className="ets-chl-current-level-name">{currentLevelDoc}</span>
@@ -153,13 +165,13 @@ class Studyunit extends Component {
           <div className="ets-ui-unn">
             <div className={`ets-ui-unn-btn-prev ${course.id === 1 ? 'ets-disabled' : ''}`} onClick={this.handlePrev.bind(this)} />
 
-            <div className={`ets-ui-unn-btn-next ${course.id === 6 ? 'ets-disabled' : ''}`} onClick={this.handleNext.bind(this)} />
+            <div className={`ets-ui-unn-btn-next ${course.id === utilList.length ? 'ets-disabled' : ''}`} onClick={this.handleNext.bind(this)} />
             {/* 主体内容 */}
             <div className="ets-ui-unn-bd">
               {/* unit Start */}
               <div className="ets-ui-unit">
                 <div className="ets-ui-unit-hd ets-cf">
-                  <h1 className="ets-overflow" title="看病">
+                  <h1 className="ets-overflow" title={course.ch}>
                     <strong>Unit {course.id}</strong>  <span>{course.topic}</span> </h1>
                 </div>
               </div>
@@ -173,37 +185,34 @@ class Studyunit extends Component {
                           <div className="ets-ui-lesson-img">
                             <img src={item.img} />
                           </div>
-                          <div className="ets-ui-lesson-title"><strong>{index + 1}</strong>{item.title}</div>
+                          <div className="ets-ui-lesson-title" title={item.chTitle}><strong>{index + 1}</strong>{item.title}</div>
                         </div>
                       </div>
                     ))
                   }
                   {/* step start */}
                   {
-                    !steps || steps.length === 0 ? '' : <div className="ets-ui-step-container">
-                      <div className="ets-ui-steps-wrap ets-expanded">
-                        <ul className="ets-ui-steps">
-                          {
-                            steps.map((step, index) => (
-                              <li key={index} className="ets-ui-step-bd">
-                                <div className={`ets-ui-step ${step.isDetail !== false ? 'ets-passed' : ''}`} onClick={this.handleStep.bind(this, index)}>
-                                  <div className="ets-ui-step-index">{index + 1}</div>
-                                  <div className="ets-ui-step-type ets-overflow">{step.title}</div>
-                                  <div className="ets-ui-step-title ets-overflow">{step.contain}</div>
-                                </div>
-                              </li>
-                            ))
-                          }
-                        </ul>
-                      </div>
-                    </div>
+                    !steps || steps.length === 0 ? '' : <Steps data={steps} handleStep={this.handleStep} />
                   }
                   {/* step end */}
                 </div>
               </div>
             </div>
           </div>
+          {/* 小圆点 */}
+          {
+            steps.length !== 0 ? '' : <div className="ets-ui-unn-ft">
+              <ul className="ets-ui-unn-dots">
+                {
+                  utilList.map((dot, index) => (
+                    <li key={index} className={`ets-ui-unn-dot ${dot.id === Number(this.props.unitId) ? 'ets-active' : ''} `} />
+                  ))
+                }
+              </ul>
+            </div>
+          }
         </div>
+
         {/* 查看详情 */}
         {
           isShowDetails ? <StudyunitDetails data={utilDetail} handleClose={this.handleClose} /> : ''

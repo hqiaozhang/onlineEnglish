@@ -1,6 +1,6 @@
 'use strict'
 const webpack = require('webpack')
-const config = require('../config')
+const config = require('./baseconfig')
 const merge = require('webpack-merge')
 const path = require('path')
 const baseWebpackConfig = require('./webpack.base.conf')

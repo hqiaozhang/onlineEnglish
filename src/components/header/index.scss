@@ -5,12 +5,18 @@
   background: #fff;
   .ue-inner {
     width: 974px;
-    height: 59px;
+    height: 58px;
     margin: 0 auto;
+    li {
+      float: left;
+      cursor: pointer;
+      &.active {
+        border-bottom: 2px solid #666;
+      }
+    }
     a {
       color: #000;
       line-height: 55px;
-      cursor: pointer;
       padding: 0 15px;
       display: inline-block;
     }

@@ -6,6 +6,7 @@ import Header from '@/components/header/header';
 import configureStore from '@/redux/store';
 import App from '@/containers/app';
 import Docs from '@/containers/docs';
+import Studytools from '@/containers/Studytools';
 import Studyunit from '@/containers/studyunit';
 
 const store = configureStore();
@@ -28,6 +29,7 @@ const Root = () => (
             <Router exact path="/" component={App} />
             <Router path="/docs" component={Docs} />
             <Router path="/studyunit" component={Studyunit} />
+            <Router path="/studytools" component={Studytools} />
           </Switch>
         </div>
       </div>
