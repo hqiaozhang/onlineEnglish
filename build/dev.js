@@ -1,6 +1,6 @@
 'use strict'
 const webpack = require('webpack')
-const config = require('../config')
+const config = require('./baseconfig')
 const devWebpackConfig = require('./webpack.dev.conf')
 const portfinder = require('portfinder')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')

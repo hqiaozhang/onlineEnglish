@@ -1,0 +1,128 @@
+.studytools {
+  background-color: #f9f6f2;
+  min-height: calc(100vh - 60px);
+}
+.header {
+  padding: 30px 0;
+  background-color: #fff;
+}
+.header .title {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.body {
+  border-top: 3px solid #ece9e6;
+  padding-bottom: 28px;
+}
+.body .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.inner {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 974px;
+}
+.body>.inner a.column.column-left, 
+.body>.inner a.column:hover.column-left, 
+.body>.inner a.column:visited.column-left {
+  margin-left: 0;
+}
+
+.body>.inner a.column, 
+.body>.inner a.column:hover, 
+.body>.inner a.column:visited {
+  position: relative;
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 28px;
+  padding-bottom: 45px;
+  width: 306px;
+  font-family: HelveticaNeue,Helvetica,Arial,Microsoft Yahei,sans-serif;
+  line-height: 1.42857143;
+  color: #000;
+  background-color: #fff;
+}
+
+.body>.inner a.column .img img, 
+.body>.inner a.column:hover .img img, 
+.body>.inner a.column:visited .img img {
+  width: 100%;
+  -moz-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+.body>.inner a.column .img, 
+.body>.inner a.column:hover .img, 
+.body>.inner a.column:visited .img {
+  width: 100%;
+  height: 172px;
+  overflow: hidden;
+}
+
+.body>.inner a.column:hover span, 
+.body>.inner a.column:visited span, 
+.body>.inner a.column span {
+  display: block;
+  cursor: pointer;
+}
+.body>.inner a.column .txt, 
+.body>.inner a.column:hover .txt, 
+.body>.inner a.column:visited .txt {
+  padding: 25px 30px 15px;
+}
+.body>.inner a.column .txt h2, 
+.body>.inner a.column:hover .txt h2, 
+.body>.inner a.column:visited .txt h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 1.1;
+}
+.body>.inner a.column .txt p, 
+.body>.inner a.column:hover .txt p, 
+.body>.inner a.column:visited .txt p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 300;
+
+}
+.body>.inner a.column .learn-more, 
+.body>.inner a.column:hover .learn-more, 
+.body>.inner a.column:visited .learn-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  display: inline-block;
+  padding: 0 30px 18px;
+  width: calc(100% - 60px);
+  height: 27px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.body>.inner a.column .img img, 
+.body>.inner a.column:hover .img img, 
+.body>.inner a.column:visited .img img {
+  width: 100%;
+  -moz-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+.body>.inner a.column:hover .learn-more {
+  visibility: visible;
+}
+.body>.inner a.column:hover .learn-more, 
+.body>.inner a.column:hover .txt h2 {
+  color: #1986fb;
+}

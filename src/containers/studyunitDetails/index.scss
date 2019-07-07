@@ -123,11 +123,14 @@
   padding: 6px;
   border-color: #666;
 }
-.ets-act-lpn-section table td:first-child {
-  display: none;
-}
+// .ets-act-lpn-section table td:first-child {
+//   display: none;
+// }
 
-.ets-act-lpn-section table td[colspan$='3']  {
-  display: table-cell;
-  line-height: 22px;
+.ets-act-lpn-section table {
+  td[colspan$='3'],
+  td[colspan$='2']  {
+    display: table-cell;
+    line-height: 22px;
+  }
 }

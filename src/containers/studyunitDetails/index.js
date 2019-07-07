@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import './index.scss';
 
 
@@ -7,7 +6,6 @@ export default class StudyunitDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
     };
   }
 
@@ -45,7 +43,6 @@ export default class StudyunitDetails extends Component {
             </div>
           </div>
           <div className="ets-ui-acc-ft" />
-
         </div>
       </div>
     );

@@ -3,13 +3,13 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import {hot} from 'react-hot-loader';
 import Header from '@/components/header/header';
-import Store from '@/redux';
-import DevTools from '@/redux/DevTools';
+import configureStore from '@/redux/store';
 import App from '@/containers/app';
 import Docs from '@/containers/docs';
+import Studytools from '@/containers/Studytools';
 import Studyunit from '@/containers/studyunit';
-import StudyunitDetails from '@/containers/studyunitDetails';
 
+const store = configureStore();
 const Router = ({component: Component, children, ...rest}) => (
   <Route
     {...rest}
@@ -21,16 +21,15 @@ const Router = ({component: Component, children, ...rest}) => (
 
 const Root = () => (
   <BrowserRouter>
-    <Provider store={Store}>
+    <Provider store={store}>
       <div className="main_app">
         <Header />
         <div className="router-content">
-          {__DEVELOPMENT__ && <DevTools />}
           <Switch>
             <Router exact path="/" component={App} />
             <Router path="/docs" component={Docs} />
             <Router path="/studyunit" component={Studyunit} />
-            <Router path="/studyunitDetails" component={StudyunitDetails} />
+            <Router path="/studytools" component={Studytools} />
           </Switch>
         </div>
       </div>
