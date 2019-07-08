@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-08 18:00:29
+ * @Last Modified time: 2019-07-08 21:33:06
  */
 
 export default{
@@ -472,6 +472,7 @@ export default{
                 title: '词汇',
                 contain: 'Movie genres',
                 ch: '电影类型',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: "'One' as a replacement noun",
@@ -484,7 +485,6 @@ export default{
                 title: '最终任务',
                 contain: 'Talking about a movie you recently saw',
                 ch: '谈论你最近看过的电影',
-                isDetail: false,
               }
             ],
           },
@@ -550,6 +550,7 @@ export default{
                 title: '词汇',
                 contain: 'Adjectives for movies',
                 ch: '描述电影的形容词',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: 'Past passive',
@@ -626,7 +627,7 @@ export default{
                 title: '最终任务',
                 contain: 'Discussing outfits',
                 ch: '讨论着装',
-                isDetail: false,
+
               }
             ],
           }, {

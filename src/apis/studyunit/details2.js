@@ -4,32 +4,139 @@ export default {
     erroCode: 2000,
     erroMsg: null,
     result: [{
-      studentActivityId: '215aad4a-c77f-4a86-91ac-6d3083eb66f4',
-      templateActivityId: 101026300,
+      studentUnitId: '6fafbc99-8354-4f27-a32c-f59e1887c5e0',
+      templateUnitId: 30002997,
       courseVersion: '2.0.1.0',
-      activityNo: 2,
-      activityName: '',
-      activityGradeModeId: 1,
-      activityContentId: 275563,
-      activityTemplateId: 38,
+      unitNo: 5,
+      unitName: '电影',
+      unitImage: {
+        collapsed: true,
+        id: 'media!176791'
+      },
+      legacyUnitId: 1816,
+      children: [{
+        collapsed: true,
+        id: 'student_lesson!587a35fb-bf85-4cce-94a0-36f1de6e9321'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!3deaadc2-f58a-4eb9-845a-68a08b0dc9c1'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!dfbf4609-5994-496e-8b32-d8744818f877'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!fe268b31-7f63-463c-8686-effa52fb57f5'
+      }],
       parent: {
         collapsed: true,
-        id: 'student_step!2a479273-f986-4077-b6dc-b7d1240ff6dc'
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
       },
       progress: {
         collapsed: true,
-        id: 'student_activity_progress!215aad4a-c77f-4a86-91ac-6d3083eb66f4'
+        id: 'student_unit_progress!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
+      },
+      isTemplate: false,
+      itemTypeId: 3,
+      maxAge: 86400,
+      lastModified: 1562592618107,
+      collapsed: false,
+      id: 'student_unit!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
+    }, {
+      studentLessonId: '3277f86e-6abc-4ee2-8c2f-0190b214f426',
+      templateLessonId: 80013207,
+      courseVersion: '2.0.1.0',
+      lessonNo: 4,
+      lessonName: '写关于一个电影',
+      lessonImage: {
+        collapsed: true,
+        id: 'media!122267'
+      },
+      lessonDesc: '在这节课，你将学习如何写关于电影的东西。',
+      lessonTypeId: 1,
+      lessonTypeName: '读',
+      legacyLessonId: 7784,
+      children: [{
+        collapsed: true,
+        id: 'student_step!f44acc2c-b65b-4195-b51e-0775d3b36752'
+      }, {
+        collapsed: true,
+        id: 'student_step!ccafab41-df08-4a51-9497-cc25e0cc4ee3'
+      }, {
+        collapsed: true,
+        id: 'student_step!1e82035d-fb0b-48fc-91db-28f960a703cf'
+      }, {
+        collapsed: true,
+        id: 'student_step!b3268e81-452a-438d-ae50-47e5a3f1f7ad'
+      }],
+      progress: {
+        collapsed: true,
+        id: 'student_lesson_progress!3277f86e-6abc-4ee2-8c2f-0190b214f426'
+      },
+      isTemplate: false,
+      itemTypeId: 8,
+      maxAge: 86400,
+      lastModified: 1562592618073,
+      collapsed: false,
+      id: 'student_lesson!3277f86e-6abc-4ee2-8c2f-0190b214f426'
+    }, {
+      studentActivityId: '02d78c0b-d74f-46c1-b52c-a013038644eb',
+      templateActivityId: 101026356,
+      courseVersion: '2.0.1.0',
+      activityNo: 1,
+      activityName: '',
+      activityGradeModeId: 1,
+      activityContentId: 275666,
+      activityTemplateId: 38,
+      parent: {
+        collapsed: true,
+        id: 'student_step!1e82035d-fb0b-48fc-91db-28f960a703cf'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_activity_progress!02d78c0b-d74f-46c1-b52c-a013038644eb'
       },
       activityContent: {
         collapsed: true,
-        id: 'activity_content!275563'
+        id: 'activity_content!275666'
       },
       isTemplate: false,
       itemTypeId: 10,
       maxAge: 86400,
-      lastModified: 1559860965663,
+      lastModified: 1558182369317,
       collapsed: false,
-      id: 'student_activity!215aad4a-c77f-4a86-91ac-6d3083eb66f4'
+      id: 'student_activity!02d78c0b-d74f-46c1-b52c-a013038644eb'
+    }, {
+      studentStepId: '1e82035d-fb0b-48fc-91db-28f960a703cf',
+      templateStepId: 90107684,
+      courseVersion: '2.0.1.0',
+      stepNo: 3,
+      stepName: '阅读影评',
+      stepTypeId: 8,
+      stepTypeName: '阅读',
+      children: [{
+        collapsed: true,
+        id: 'student_activity!02d78c0b-d74f-46c1-b52c-a013038644eb'
+      }, {
+        collapsed: true,
+        id: 'student_activity!159e30aa-d64c-4f7e-a3a8-2a6faeb9a973'
+      }, {
+        collapsed: true,
+        id: 'student_activity!859b3cbf-efb6-42d6-bd5e-746f95c1b8bb'
+      }],
+      parent: {
+        collapsed: true,
+        id: 'student_lesson!3277f86e-6abc-4ee2-8c2f-0190b214f426'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_step_progress!1e82035d-fb0b-48fc-91db-28f960a703cf'
+      },
+      isTemplate: false,
+      itemTypeId: 9,
+      maxAge: 86400,
+      lastModified: 1558182369317,
+      collapsed: false,
+      id: 'student_step!1e82035d-fb0b-48fc-91db-28f960a703cf'
     }, {
       studentLevelId: '646585e8-6558-4796-b0c1-b45dd9525e7b',
       templateLevelId: 20000752,
@@ -73,119 +180,9 @@ export default {
       isTemplate: false,
       itemTypeId: 2,
       maxAge: 86400,
-      lastModified: 1562579956193,
+      lastModified: 1562592618107,
       collapsed: false,
       id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
-    }, {
-      studentStepId: '2a479273-f986-4077-b6dc-b7d1240ff6dc',
-      templateStepId: 90107668,
-      courseVersion: '2.0.1.0',
-      stepNo: 3,
-      stepName: '询问账单和付账',
-      stepTypeId: 12,
-      stepTypeName: '表达',
-      children: [{
-        collapsed: true,
-        id: 'student_activity!7132ff8d-ad15-4f10-9c28-95e0aeda7ff1'
-      }, {
-        collapsed: true,
-        id: 'student_activity!215aad4a-c77f-4a86-91ac-6d3083eb66f4'
-      }, {
-        collapsed: true,
-        id: 'student_activity!19870352-9cfe-4279-8d35-cc7146b4c014'
-      }, {
-        collapsed: true,
-        id: 'student_activity!50b2c2f2-17a3-4e7c-893e-d8f47586e856'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_lesson!0e323034-bd1e-453c-83d8-42d6832fd9ac'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_step_progress!2a479273-f986-4077-b6dc-b7d1240ff6dc'
-      },
-      isTemplate: false,
-      itemTypeId: 9,
-      maxAge: 86400,
-      lastModified: 1562579956160,
-      collapsed: false,
-      id: 'student_step!2a479273-f986-4077-b6dc-b7d1240ff6dc'
-    }, {
-      studentLessonId: '0e323034-bd1e-453c-83d8-42d6832fd9ac',
-      templateLessonId: 80013203,
-      courseVersion: '2.0.1.0',
-      lessonNo: 4,
-      lessonName: '询问账单和付账',
-      lessonImage: {
-        collapsed: true,
-        id: 'media!122263'
-      },
-      lessonDesc: '在本课中，您将学习如何索要账单和付账。',
-      lessonTypeId: 1,
-      lessonTypeName: '读',
-      legacyLessonId: 7780,
-      children: [{
-        collapsed: true,
-        id: 'student_step!6ef4d964-544f-46b2-9175-fd0a37e6c9e0'
-      }, {
-        collapsed: true,
-        id: 'student_step!34815817-f51c-46b0-901b-6d5188eeea32'
-      }, {
-        collapsed: true,
-        id: 'student_step!2a479273-f986-4077-b6dc-b7d1240ff6dc'
-      }, {
-        collapsed: true,
-        id: 'student_step!a743e8c3-5098-41d1-9d75-64a3b1bc85b1'
-      }],
-      progress: {
-        collapsed: true,
-        id: 'student_lesson_progress!0e323034-bd1e-453c-83d8-42d6832fd9ac'
-      },
-      isTemplate: false,
-      itemTypeId: 8,
-      maxAge: 86400,
-      lastModified: 1562579956160,
-      collapsed: false,
-      id: 'student_lesson!0e323034-bd1e-453c-83d8-42d6832fd9ac'
-    }, {
-      studentUnitId: 'd99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4',
-      templateUnitId: 30002996,
-      courseVersion: '2.0.1.0',
-      unitNo: 4,
-      unitName: '去餐馆',
-      unitImage: {
-        collapsed: true,
-        id: 'media!176790'
-      },
-      legacyUnitId: 1815,
-      children: [{
-        collapsed: true,
-        id: 'student_lesson!f3bc7bd8-04ae-43fd-8616-235e7b57e723'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!b31ce02c-f6f9-4da1-a210-5345e0fd0154'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!cf3673d9-e645-442c-8dec-2263245f7f8d'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!2c2cecc3-c94d-4857-b6a6-6c8dbfe487b6'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_unit_progress!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
-      },
-      isTemplate: false,
-      itemTypeId: 3,
-      maxAge: 86400,
-      lastModified: 1562579956193,
-      collapsed: false,
-      id: 'student_unit!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
     }, {
       studentCourseId: 'ee414fca-d98b-49fc-a53d-7dbba3387980',
       templateCourseId: 10000014,
@@ -313,28 +310,28 @@ export default {
       collapsed: false,
       id: 'student_unit!0640db94-03d3-496d-b1d8-3130936d0b7c'
     }, {
-      studentUnitId: '6fafbc99-8354-4f27-a32c-f59e1887c5e0',
-      templateUnitId: 30002997,
+      studentUnitId: 'd99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4',
+      templateUnitId: 30002996,
       courseVersion: '2.0.1.0',
-      unitNo: 5,
-      unitName: '电影',
+      unitNo: 4,
+      unitName: '去餐馆',
       unitImage: {
         collapsed: true,
-        id: 'media!176791'
+        id: 'media!176790'
       },
-      legacyUnitId: 1816,
+      legacyUnitId: 1815,
       children: [{
         collapsed: true,
-        id: 'student_lesson!587a35fb-bf85-4cce-94a0-36f1de6e9321'
+        id: 'student_lesson!f3bc7bd8-04ae-43fd-8616-235e7b57e723'
       }, {
         collapsed: true,
-        id: 'student_lesson!3deaadc2-f58a-4eb9-845a-68a08b0dc9c1'
+        id: 'student_lesson!b31ce02c-f6f9-4da1-a210-5345e0fd0154'
       }, {
         collapsed: true,
-        id: 'student_lesson!dfbf4609-5994-496e-8b32-d8744818f877'
+        id: 'student_lesson!cf3673d9-e645-442c-8dec-2263245f7f8d'
       }, {
         collapsed: true,
-        id: 'student_lesson!fe268b31-7f63-463c-8686-effa52fb57f5'
+        id: 'student_lesson!2c2cecc3-c94d-4857-b6a6-6c8dbfe487b6'
       }],
       parent: {
         collapsed: true,
@@ -342,14 +339,14 @@ export default {
       },
       progress: {
         collapsed: true,
-        id: 'student_unit_progress!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
+        id: 'student_unit_progress!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
       },
       isTemplate: false,
       itemTypeId: 3,
       maxAge: 86400,
-      lastModified: 1561955264147,
+      lastModified: 1562579956193,
       collapsed: false,
-      id: 'student_unit!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
+      id: 'student_unit!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
     }, {
       studentUnitId: 'e4cd3ae7-2998-47d2-8e8f-135d87cc9966',
       templateUnitId: 30002995,
@@ -470,7 +467,7 @@ export default {
           scripts: []
         },
         presentations: [{
-          text: '<div>\n\t<div>\n\t\t<div>\n\t\t\t<strong>在餐馆询问账单和付账</strong><br />\n\t\t\t&nbsp;</div>\n\t</div>\n\t<div>\n\t\t<div>\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="700">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan="3">\n\t\t\t\t\t\t\t用这些表达来叫您的侍者来 **check**, 或 **bill**。<br />\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style="width: 5%;">\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/32/v/111432/GE_5.4.4.3.2_1_v2.mp3</td>\n\t\t\t\t\t\t<td style="width: 40%;">\n\t\t\t\t\t\t\t<em>Could I have the <strong>bill</strong>, please?</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t请把账单给我好吗？</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/33/v/111433/GE_5.4.4.3.2_2_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<em>We&#39;re ready for our <strong>check</strong>.&nbsp;</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t我们可以付账了。</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan="3">\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t如果不确定餐馆是否接受信用卡，你可以询问。<br />\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/34/v/111434/GE_5.4.4.3.2_3_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<em>Do you take credit cards?&nbsp;&nbsp;</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t你们接受信用卡付款吗？</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan="3">\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t当您讨论 **tip*时，用动词**leave**。<br />\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/35/v/111435/GE_5.4.4.3.2_4_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\tA: <em>How much should we <strong>leav</strong>e for a <strong>tip</strong>?</em><br />\n\t\t\t\t\t\t\tB:<em> I think 15% is good.&nbsp;</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t小费我们应该给多少？<br />\n\t\t\t\t\t\t\t我觉得 15% 就可以了。</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/31/v/111431/GE_5.4.4.3.2_5_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\tA: <em>Did you <strong>leave</strong> a <strong>tip</strong>?&nbsp;</em>&nbsp;&nbsp;&nbsp;<br />\n\t\t\t\t\t\t\tB:<em> I <strong>left</strong> 20 percent. Everything was excellent!</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t你给小费了吗？<br />\n\t\t\t\t\t\t\t我留了 20% 的小费。各方面都非常棒！</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t<p>\n\t\t\t\t&nbsp;</p>\n\t\t\t<p>\n\t\t\t\t&nbsp;&nbsp;</p>\n\t\t\t<!-- InstanceEndEditable --></div>\n\t</div>\n</div>\n<p>\n\t&nbsp;</p>',
+          text: "<p>\n\t<strong>推断</strong></p>\n<p>\n\t<br />\n\t文本中，事实和观点往往并不直接说明。在这种情况下，你必须做出推断。推断是一种猜测。<br />\n\t&nbsp;</p>\n<table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 46%;\">\n\t\t\t\t<em>Gene Kelly did a great job in the movie &#39;Singin&#39; in the Rain&#39;! He&#39;s an excellent dancer.</em></td>\n\t\t\t<td>\n\t\t\t\tGene Kelly 在影片 'Singin' in the Rain' 中表现非常出色！他舞跳得很好。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 46%;\">\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 46%;\">\n\t\t\t\t作者并没有直接说 Gene Kelly 在影片 'Singin' in the Rain' 有跳舞，但因为两个关于电影和 Gene Kelly 的句子前后相邻，我们可以推断他在电影中跳过舞。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 46%;\">\n\t\t\t\t&nbsp;</td>\n\t\t\t<td>\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<table border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"width: 46%;\">\n\t\t\t\t<em>&#39;The Class&#39; is a great movie. It was made in France.&nbsp; </em></td>\n\t\t\t<td>\n\t\t\t\t'The Class' 是一部优秀的影片。影片在法国制作。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td style=\"width: 46%;\">\n\t\t\t\t&nbsp;</td>\n\t\t\t<td>\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan=\"2\" style=\"width: 46%;\">\n\t\t\t\t作者并没有直接说影片 'The Class' 中讲哪种语言，但由于影片在法国制作，我们可以推断它是法语影片。</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>\n\t&nbsp;</p>",
           layoutType: 'Table'
         }]
       },
@@ -480,7 +477,7 @@ export default {
       },
       maxAge: 86400,
       collapsed: false,
-      id: 'activity_content!275563'
+      id: 'activity_content!275666'
     }, {
       result: ['/campus/mypage/home', '/customerservice/contactus/inschool', '/customerservice/dashboard', '/customerservice/helpcenter', '/evc/gl', '/evc/mybookings', '/logout/logout.aspx', '/school/anat/progressreport', '/school/changecourse', '/school/content/activitypreview.aspx', '/school/content/leveltest.aspx', '/school/course/certificateboard.aspx', '/school/course/progressreportv2.aspx', '/school/e12', '/school/evc/pl', '/school/feedback/writing', '/school/partners/lls/myaccountv2.aspx', '/school/progressreport', '/school/studyplan', '/school/studyplan/evc/mobile', '/school/studytool', '/school/studytools/notebook2', '/school/studytools/pronounciation.aspx', '/school/studytools/tofeltoeic/toeictofelcontainer.aspx', '/school/studyunit', '/translator', '/school/mypage/ec', '/school/mypage/mobile', '/school/smart', '/school/mini', '/school/englishcenters/allecapps', '/school/englishcenters/nocoupon', '/school/englishcenters/smart15app', '/school/englishcenters/welcome', '/school/englishcenters/welcome/confirm', '/school/basicinfo.aspx', '/school/myaccount2.aspx', '/school/remindersetting.aspx', '/school/manageemailsubscription.aspx', '/school/studentwriting', '/chat/friends', '/ecplatform/page/booking-list', '/ecplatform', '/smartpoint'],
       maxAge: 86400,

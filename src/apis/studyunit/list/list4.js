@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-05 15:13:21
+ * @Last Modified time: 2019-07-08 21:40:34
  */
 
 export default{
@@ -16,11 +16,12 @@ export default{
       {
         id: 1,
         topic: 'Entertainment',
+        ch: '娱乐',
         list: [
           {
             img: 'https://cns1.ef-cdn.com/Juno/12/22/28/v/122228/GE_4.1.1_describing_web.jpg',
             title: 'Describing entertainment options',
-            chTitle: '',
+            chTitle: '描述休闲娱乐的选择',
             id: 1,
             steps: [
               {
@@ -48,7 +49,7 @@ export default{
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/12/22/29/v/122229/GE_4.1.2_writing_web_v1.jpg',
             title: 'Talking about upcoming events',
-            chTitle: '',
+            chTitle: '谈论即将发生的活动',
             id: 2,
             steps: [
               {
@@ -77,7 +78,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/30/v/122230/GE_4.1.3_planning_web.jpg',
             title: 'Planning a night out with friends',
-            chTitle: '',
+            chTitle: '计划与朋友晚上外出',
             id: 3,
             steps: [
               {
@@ -105,7 +106,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/27/v/122227/GE_4.1.4_going_web.jpg',
             title: 'Going to the movies',
-            chTitle: '',
+            chTitle: '看电影',
             id: 4,
             steps: [
               {
@@ -131,11 +132,12 @@ export default{
       }, {
         id: 2,
         topic: 'Describing people',
+        ch: '描述他人',
         list: [
           {
             img: 'https://cns.ef-cdn.com/Juno/12/22/32/v/122232/GE_4.2.1_describing_web.jpg',
             title: 'Describing someone you know',
-            chTitle: '',
+            chTitle: '描述某个您所认识的人',
             id: 1,
             steps: [
               {
@@ -159,7 +161,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/33/v/122233/GE_4.2.2_describing_web.jpg',
             title: 'Describing relationships',
-            chTitle: '',
+            chTitle: '描述关系',
             id: 2,
             steps: [
               {
@@ -183,7 +185,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/34/v/122234/GE_4.2.3_evaluating_web.jpg',
             title: 'Evaluating employees',
-            chTitle: '',
+            chTitle: '评估员工',
             id: 3,
             steps: [
               {
@@ -207,7 +209,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/31/v/122231/GE_4.2.4_writing_web.jpg',
             title: 'Giving a recommendation',
-            chTitle: '',
+            chTitle: '给出推荐',
             id: 4,
             steps: [
               {
@@ -233,11 +235,12 @@ export default{
       }, {
         id: 3,
         topic: 'The past',
+        ch: '过去',
         list: [
           {
             img: 'https://cns.ef-cdn.com/Juno/12/22/36/v/122236/GE_4.3.1_asking_web.jpg',
             title: "Asking about someone's week",
-            chTitle: '',
+            chTitle: '询问别人一周的情况',
             id: 1,
             steps: [
               {
@@ -265,7 +268,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/37/v/122237/GE_4.3.2_talking_web.jpg',
             title: 'Talking about your weekend',
-            chTitle: '',
+            chTitle: '谈论你的周末',
             id: 2,
             steps: [
               {
@@ -293,7 +296,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/38/v/122238/GE_4.3.3_telling_web.jpg',
             title: 'Telling a story',
-            chTitle: '',
+            chTitle: '讲故事',
             id: 3,
             steps: [
               {
@@ -321,7 +324,7 @@ export default{
           }, {
             img: 'https://cns.ef-cdn.com/Juno/12/22/35/v/122235/GE_4.3.4_listening_web.jpg',
             title: 'Listening to a story',
-            chTitle: '',
+            chTitle: '听故事',
             id: 4,
             steps: [
               {
@@ -347,11 +350,12 @@ export default{
       }, {
         id: 4,
         topic: 'Milestones',
+        ch: '重大事件',
         list: [
           {
             img: 'https://cns1.ef-cdn.com/Juno/12/22/40/v/122240/GE_4.4.1_talking_web.jpg',
             title: 'Talking about your life',
-            chTitle: '',
+            chTitle: '谈论你的人生',
             id: 1,
             steps: [
               {
@@ -375,7 +379,7 @@ export default{
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/12/22/41/v/122241/GE_4.4.2_discussing_web.jpg',
             title: 'Discussing important life events',
-            chTitle: '',
+            chTitle: '谈论重大人生事件',
             id: 2,
             steps: [
               {
@@ -399,7 +403,7 @@ export default{
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/12/22/42/v/122242/GE_4.4.3_writing_web.jpg',
             title: "Giving details about someone's life",
-            chTitle: '',
+            chTitle: '介绍某人生活的详情',
             id: 3,
             steps: [
               {
@@ -423,7 +427,7 @@ export default{
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/12/22/39/v/122239/GE_4.4.4_interviewing_web.jpg',
             title: 'Interviewing for a job',
-            chTitle: '',
+            chTitle: '面试工作',
             id: 4,
             steps: [
               {
@@ -449,11 +453,12 @@ export default{
       }, {
         id: 5,
         topic: 'Welcome',
+        ch: '欢迎',
         list: [
           {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/44/v/122244/GE_4.5.1_inviting_web.jpg',
             title: 'Inviting someone to your home',
-            chTitle: '',
+            chTitle: '邀请某人到你家',
             id: 1,
             steps: [
               {
@@ -480,7 +485,7 @@ export default{
           }, {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/45/v/122245/GE_4.5.2_welcoming_web.jpg',
             title: 'Welcoming someone to your home',
-            chTitle: '',
+            chTitle: '欢迎某人到你家',
             id: 2,
             steps: [
               {
@@ -504,7 +509,7 @@ export default{
           }, {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/46/v/122246/GE_4.5.3_parting_web_v2.jpg',
             title: 'Parting at the end of an evening',
-            chTitle: '',
+            chTitle: '夜晚结束时告别',
             id: 3,
             steps: [
               {
@@ -528,7 +533,7 @@ export default{
           }, {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/43/v/122243/GE_4.5.4_writing_web.jpg',
             title: 'Writing a thank-you letter',
-            chTitle: '',
+            chTitle: '撰写感谢信',
             id: 4,
             steps: [
               {
@@ -554,11 +559,12 @@ export default{
       }, {
         id: 6,
         topic: 'Vacations',
+        ch: '度假',
         list: [
           {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/48/v/122248/GE_4.6.1_getting_web.jpg',
             title: 'Getting information about a destination',
-            chTitle: '',
+            chTitle: '获取目的地信息',
             id: 1,
             steps: [
               {
@@ -585,7 +591,7 @@ export default{
           }, {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/49/v/122249/GE_4.6.2_discussing_web.jpg',
             title: 'Discussing vacation plans',
-            chTitle: '',
+            chTitle: '讨论度假计划',
             id: 2,
             steps: [
               {
@@ -609,7 +615,7 @@ export default{
           }, {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/50/v/122250/GE_4.6.3_seeing_web.jpg',
             title: 'Seeing someone off',
-            chTitle: '',
+            chTitle: '送别某人',
             id: 3,
             steps: [
               {
@@ -637,7 +643,7 @@ export default{
           }, {
             img: 'https://cns2.ef-cdn.com/Juno/12/22/47/v/122247/GE_4.6.4_writing_web.jpg',
             title: 'Describing a vacation',
-            chTitle: '',
+            chTitle: '描述假期',
             id: 4,
             steps: [
               {
