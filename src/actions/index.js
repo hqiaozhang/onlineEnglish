@@ -26,7 +26,6 @@ export const rquestStudyunit = (id) => dispatch => fetch(`fetchStudyunit${id}`, 
 
 // 查询单元详情
 export const requestStudyunitDetails = (id) => dispatch => fetch(`fetchUnitDetails${id}`, (data) => {
-  console.log('================', id, data);
   dispatch(studyunitDetailsSuccess(data));
 });
 

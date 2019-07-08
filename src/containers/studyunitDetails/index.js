@@ -1,6 +1,14 @@
+/*
+ * @Author: zhanghongqiao
+ * @Date: 2019-07-08 14:58:21
+ * @Email: 991034150@qq.com
+ * @Description: 课程详情
+ * @Last Modified by: zhanghongqiao
+ * @Last Modified time: 2019-07-08 14:58:21
+ */
+
 import React, {Component} from 'react';
 import './index.scss';
-
 
 export default class StudyunitDetails extends Component {
   constructor(props) {
@@ -8,12 +16,23 @@ export default class StudyunitDetails extends Component {
     this.state = {
     };
   }
-
+  componentDidMount() {
+    // 隐藏所有音频文件和空标签
+    const tds = document.getElementsByTagName('td');
+    for (let i = 0; i < tds.length; i++) {
+      if (tds[i].innerHTML.includes('https') || tds[i].innerHTML.trim() === '&nbsp;') {
+        tds[i].style.display = 'none';
+      }
+    }
+  }
   render() {
     if (!this.props.data) {
       return '';
     }
     const {presentations, stepName} = this.props.data;
+    if (!presentations) {
+      return '';
+    }
     return (
       <div className="ets-ui-acc-wrap ets-acc-open">
         <div className="ets-ui-acc">

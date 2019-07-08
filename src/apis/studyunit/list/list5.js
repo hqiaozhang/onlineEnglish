@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-05 13:56:42
+ * @Last Modified time: 2019-07-08 18:00:29
  */
 
 export default{
@@ -27,7 +27,8 @@ export default{
               {
                 title: '词汇',
                 contain: 'Travel vocabulary',
-                ch: '旅行词汇'
+                ch: '旅行词汇',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: 'Present perfect',
@@ -40,7 +41,6 @@ export default{
                 title: '最终任务',
                 contain: 'Talking about flight arrangements',
                 ch: '谈论飞行计划',
-                isDetail: false,
               }
             ],
           }, {
@@ -52,16 +52,17 @@ export default{
               {
                 title: '表达',
                 contain: 'Checking in at an airport',
-                ch: '在机场办理登机'
+                ch: '在机场办理登机',
+                isDetail: false,
               }, {
                 title: '阅读',
                 contain: 'Reading a boarding pass',
-                ch: '阅读登机牌'
+                ch: '阅读登机牌',
+                isDetail: false,
               }, {
                 title: '最终任务',
                 contain: 'Checking in for a flight',
                 ch: '办理登机',
-                isDetail: false,
               },
             ],
           }, {
@@ -73,7 +74,8 @@ export default{
               {
                 title: '词汇',
                 contain: 'Airport transportation',
-                ch: '机场交通'
+                ch: '机场交通',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: "'Have to' for necessity or obligation",
@@ -90,7 +92,7 @@ export default{
                 title: '最终任务',
                 contain: 'Getting to your hotel',
                 ch: '前往您入住的酒店',
-                isDetail: false,
+
               },
             ]
           }, {
@@ -102,7 +104,8 @@ export default{
               {
                 title: '语法',
                 contain: 'More past participles',
-                ch: '更多的过去分词'
+                ch: '更多的过去分词',
+                isDetail: false,
               }, {
                 title: '表达',
                 contain: 'Foreign travel',
@@ -114,7 +117,8 @@ export default{
               }, {
                 title: '阅读',
                 contain: "A traveler's blog",
-                ch: '旅行日志'
+                ch: '旅行日志',
+                isDetail: false,
               }, {
                 title: '最终任务',
                 contain: "Letting someone know you've arrived",
@@ -184,7 +188,8 @@ export default{
               {
                 title: '词汇',
                 contain: 'Conference language',
-                ch: '会议语言'
+                ch: '会议语言',
+                isDetail: false,
               }, {
                 title: '表达',
                 contain: 'Suggesting and recommending',
@@ -193,7 +198,6 @@ export default{
                 title: '最终任务',
                 contain: 'Advising the boss',
                 ch: '向老板提出建议',
-                isDetail: false,
               },
             ],
           }, {
@@ -300,7 +304,7 @@ export default{
                 title: '最终任务',
                 contain: 'Talking about a good experience',
                 ch: '谈论美好的经历',
-                isDetail: false,
+
               },
             ],
           }, {
@@ -312,7 +316,8 @@ export default{
               {
                 title: '词汇',
                 contain: 'Disasters and emergencies',
-                ch: '灾难和紧急事件'
+                ch: '灾难和紧急事件',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: "'While' clauses with past continuous",
@@ -329,7 +334,7 @@ export default{
                 title: '最终任务',
                 contain: 'Telling a story about a bad experience',
                 ch: '讲述有关糟糕经历的故事',
-                isDetail: false,
+
               },
             ],
           },
@@ -352,7 +357,8 @@ export default{
               }, {
                 title: '听力',
                 contain: 'Learning about restaurants online',
-                ch: '网上了解餐馆'
+                ch: '网上了解餐馆',
+                isDetail: false,
               }, {
                 title: '表达',
                 contain: 'Making restaurant reservations',
@@ -385,7 +391,8 @@ export default{
               }, {
                 title: '表达',
                 contain: 'Talking with the waiter',
-                ch: '和服务员交谈'
+                ch: '和服务员交谈',
+                isDetail: false,
               }, {
                 title: '最终任务',
                 contain: 'Arriving at a restaurant',
@@ -402,6 +409,7 @@ export default{
                 title: '词汇',
                 contain: 'Restaurant food',
                 ch: '餐馆食物',
+                isDetail: false,
               }, {
                 title: '阅读',
                 contain: 'Reading a menu',
@@ -413,7 +421,8 @@ export default{
               }, {
                 title: '表达',
                 contain: 'Ordering food',
-                ch: '点菜'
+                ch: '点菜',
+                isDetail: false,
               }, {
                 title: '最终任务',
                 contain: 'Ordering food in a restaurant',
@@ -433,7 +442,8 @@ export default{
               }, {
                 title: '阅读',
                 contain: 'Reading a restaurant review',
-                ch: '阅读餐馆评论'
+                ch: '阅读餐馆评论',
+                isDetail: false,
               }, {
                 title: '表达',
                 contain: 'Asking for the check and paying',

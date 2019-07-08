@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 单元详情列表
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-05 17:26:05
+ * @Last Modified time: 2019-07-08 13:54:23
  */
 import React, {Component} from 'react';
 
@@ -18,7 +18,7 @@ export default class Steps extends Component {
             {
               data.map((step, index) => (
                 <li key={index} className="ets-ui-step-bd">
-                  <div className={`ets-ui-step ${step.isDetail !== false ? 'ets-passed' : ''}`} onClick={handleStep.bind(this, index)}>
+                  <div className={`ets-ui-step ${step.isDetail !== false && index < data.length - 1 ? 'ets-passed' : ''}`} onClick={handleStep.bind(this, index)}>
                     <div className="ets-ui-step-index">{index + 1}</div>
                     <div className="ets-ui-step-type ets-overflow">{step.title}</div>
                     <div className="ets-ui-step-title ets-overflow" title={step.ch}>{step.contain}</div>

@@ -4,63 +4,63 @@ export default {
     erroCode: 2000,
     erroMsg: null,
     result: [{
-      studentActivityId: '9e47797b-6c49-44b2-8aeb-e1b72babb333',
-      templateActivityId: 101026512,
+      studentActivityId: '215aad4a-c77f-4a86-91ac-6d3083eb66f4',
+      templateActivityId: 101026300,
       courseVersion: '2.0.1.0',
-      activityNo: 1,
+      activityNo: 2,
       activityName: '',
       activityGradeModeId: 1,
-      activityContentId: 276026,
+      activityContentId: 275563,
       activityTemplateId: 38,
       parent: {
         collapsed: true,
-        id: 'student_step!9e8d4276-4f97-45b0-9170-cf0b26ca6e04'
+        id: 'student_step!2a479273-f986-4077-b6dc-b7d1240ff6dc'
       },
       progress: {
         collapsed: true,
-        id: 'student_activity_progress!9e47797b-6c49-44b2-8aeb-e1b72babb333'
+        id: 'student_activity_progress!215aad4a-c77f-4a86-91ac-6d3083eb66f4'
       },
       activityContent: {
         collapsed: true,
-        id: 'activity_content!276026'
+        id: 'activity_content!275563'
       },
       isTemplate: false,
       itemTypeId: 10,
       maxAge: 86400,
-      lastModified: 1561470431523,
+      lastModified: 1559860965663,
       collapsed: false,
-      id: 'student_activity!9e47797b-6c49-44b2-8aeb-e1b72babb333'
+      id: 'student_activity!215aad4a-c77f-4a86-91ac-6d3083eb66f4'
     }, {
-      studentLevelId: '15603093-4491-4d85-a509-f3aad0890067',
-      templateLevelId: 20000753,
+      studentLevelId: '646585e8-6558-4796-b0c1-b45dd9525e7b',
+      templateLevelId: 20000752,
       courseVersion: '2.0.1.0',
-      levelCode: '4',
-      levelNo: 6,
-      levelName: '6-初级',
-      legacyLevelId: 547,
-      enrollDate: '\/Date(1559375507000-0400)\/',
+      levelCode: '3',
+      levelNo: 5,
+      levelName: '5-初级',
+      legacyLevelId: 527,
+      enrollDate: '\/Date(1514244451000-0500)\/',
       levelTest: {
         collapsed: true,
-        id: 'student_leveltest!template_leveltest;210000054'
+        id: 'student_leveltest!920b46b5-fd4a-41ba-b0ed-2cb88a13123e'
       },
       children: [{
         collapsed: true,
-        id: 'student_unit!538e56e3-dbec-419b-8535-47e5656a431f'
+        id: 'student_unit!b68da133-351f-4672-9ec1-801d1b5517fb'
       }, {
         collapsed: true,
-        id: 'student_unit!01de9e49-2136-449c-a42e-4ca529b0d434'
+        id: 'student_unit!c9427f27-ff1e-425f-93e0-b369adfb45e5'
       }, {
         collapsed: true,
-        id: 'student_unit!template_unit;30003002'
+        id: 'student_unit!e4cd3ae7-2998-47d2-8e8f-135d87cc9966'
       }, {
         collapsed: true,
-        id: 'student_unit!template_unit;30003003'
+        id: 'student_unit!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
       }, {
         collapsed: true,
-        id: 'student_unit!template_unit;30003004'
+        id: 'student_unit!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
       }, {
         collapsed: true,
-        id: 'student_unit!template_unit;30003005'
+        id: 'student_unit!0640db94-03d3-496d-b1d8-3130936d0b7c'
       }],
       parent: {
         collapsed: true,
@@ -68,89 +68,124 @@ export default {
       },
       progress: {
         collapsed: true,
-        id: 'student_level_progress!15603093-4491-4d85-a509-f3aad0890067'
+        id: 'student_level_progress!646585e8-6558-4796-b0c1-b45dd9525e7b'
       },
       isTemplate: false,
       itemTypeId: 2,
       maxAge: 86400,
-      lastModified: 1562196305603,
+      lastModified: 1562579956193,
       collapsed: false,
-      id: 'student_level!15603093-4491-4d85-a509-f3aad0890067'
+      id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
     }, {
-      studentLessonId: '3221ce52-6aee-48d2-a901-8aa0b65e0a0b',
-      templateLessonId: 80013227,
+      studentStepId: '2a479273-f986-4077-b6dc-b7d1240ff6dc',
+      templateStepId: 90107668,
       courseVersion: '2.0.1.0',
-      lessonNo: 3,
-      lessonName: '填写处方',
-      lessonImage: {
-        collapsed: true,
-        id: 'media!130081'
-      },
-      lessonDesc: '在本课中，您将学习如何按处方配药。',
-      lessonTypeId: 1,
-      lessonTypeName: '读',
-      legacyLessonId: 8496,
+      stepNo: 3,
+      stepName: '询问账单和付账',
+      stepTypeId: 12,
+      stepTypeName: '表达',
       children: [{
         collapsed: true,
-        id: 'student_step!413fe16c-66c2-425f-af06-ddb81a48ed1d'
+        id: 'student_activity!7132ff8d-ad15-4f10-9c28-95e0aeda7ff1'
       }, {
         collapsed: true,
-        id: 'student_step!9e8d4276-4f97-45b0-9170-cf0b26ca6e04'
+        id: 'student_activity!215aad4a-c77f-4a86-91ac-6d3083eb66f4'
       }, {
         collapsed: true,
-        id: 'student_step!61dbfc16-44f2-4e47-a31a-fbe6705c10bf'
+        id: 'student_activity!19870352-9cfe-4279-8d35-cc7146b4c014'
       }, {
         collapsed: true,
-        id: 'student_step!1a2f3c5b-e6ce-4b13-be2c-203b9e4796e8'
+        id: 'student_activity!50b2c2f2-17a3-4e7c-893e-d8f47586e856'
+      }],
+      parent: {
+        collapsed: true,
+        id: 'student_lesson!0e323034-bd1e-453c-83d8-42d6832fd9ac'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_step_progress!2a479273-f986-4077-b6dc-b7d1240ff6dc'
+      },
+      isTemplate: false,
+      itemTypeId: 9,
+      maxAge: 86400,
+      lastModified: 1562579956160,
+      collapsed: false,
+      id: 'student_step!2a479273-f986-4077-b6dc-b7d1240ff6dc'
+    }, {
+      studentLessonId: '0e323034-bd1e-453c-83d8-42d6832fd9ac',
+      templateLessonId: 80013203,
+      courseVersion: '2.0.1.0',
+      lessonNo: 4,
+      lessonName: '询问账单和付账',
+      lessonImage: {
+        collapsed: true,
+        id: 'media!122263'
+      },
+      lessonDesc: '在本课中，您将学习如何索要账单和付账。',
+      lessonTypeId: 1,
+      lessonTypeName: '读',
+      legacyLessonId: 7780,
+      children: [{
+        collapsed: true,
+        id: 'student_step!6ef4d964-544f-46b2-9175-fd0a37e6c9e0'
+      }, {
+        collapsed: true,
+        id: 'student_step!34815817-f51c-46b0-901b-6d5188eeea32'
+      }, {
+        collapsed: true,
+        id: 'student_step!2a479273-f986-4077-b6dc-b7d1240ff6dc'
+      }, {
+        collapsed: true,
+        id: 'student_step!a743e8c3-5098-41d1-9d75-64a3b1bc85b1'
       }],
       progress: {
         collapsed: true,
-        id: 'student_lesson_progress!3221ce52-6aee-48d2-a901-8aa0b65e0a0b'
+        id: 'student_lesson_progress!0e323034-bd1e-453c-83d8-42d6832fd9ac'
       },
       isTemplate: false,
       itemTypeId: 8,
       maxAge: 86400,
-      lastModified: 1562195437517,
+      lastModified: 1562579956160,
       collapsed: false,
-      id: 'student_lesson!3221ce52-6aee-48d2-a901-8aa0b65e0a0b'
+      id: 'student_lesson!0e323034-bd1e-453c-83d8-42d6832fd9ac'
     }, {
-      studentUnitId: '01de9e49-2136-449c-a42e-4ca529b0d434',
-      templateUnitId: 30003001,
+      studentUnitId: 'd99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4',
+      templateUnitId: 30002996,
       courseVersion: '2.0.1.0',
-      unitNo: 2,
-      unitName: '看病',
+      unitNo: 4,
+      unitName: '去餐馆',
       unitImage: {
         collapsed: true,
-        id: 'media!176782'
+        id: 'media!176790'
       },
-      legacyUnitId: 1984,
+      legacyUnitId: 1815,
       children: [{
         collapsed: true,
-        id: 'student_lesson!7f01d587-d262-4e94-9136-3721d6a72c31'
+        id: 'student_lesson!f3bc7bd8-04ae-43fd-8616-235e7b57e723'
       }, {
         collapsed: true,
-        id: 'student_lesson!28b97607-7b90-48f8-957c-b362dea7d7c2'
+        id: 'student_lesson!b31ce02c-f6f9-4da1-a210-5345e0fd0154'
       }, {
         collapsed: true,
-        id: 'student_lesson!04c4670c-778d-41bd-8b13-8c8dce95a106'
+        id: 'student_lesson!cf3673d9-e645-442c-8dec-2263245f7f8d'
       }, {
         collapsed: true,
-        id: 'student_lesson!6eee3da3-31d7-41eb-a72b-b54e364b8f77'
+        id: 'student_lesson!2c2cecc3-c94d-4857-b6a6-6c8dbfe487b6'
       }],
       parent: {
         collapsed: true,
-        id: 'student_level!15603093-4491-4d85-a509-f3aad0890067'
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
       },
       progress: {
         collapsed: true,
-        id: 'student_unit_progress!01de9e49-2136-449c-a42e-4ca529b0d434'
+        id: 'student_unit_progress!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
       },
       isTemplate: false,
       itemTypeId: 3,
       maxAge: 86400,
-      lastModified: 1562196305603,
+      lastModified: 1562579956193,
       collapsed: false,
-      id: 'student_unit!01de9e49-2136-449c-a42e-4ca529b0d434'
+      id: 'student_unit!d99a7b30-f1ae-4325-9a82-8ec5bc8ab9a4'
     }, {
       studentCourseId: 'ee414fca-d98b-49fc-a53d-7dbba3387980',
       templateCourseId: 10000014,
@@ -217,38 +252,6 @@ export default {
       collapsed: false,
       id: 'student_course!ee414fca-d98b-49fc-a53d-7dbba3387980'
     }, {
-      studentStepId: '9e8d4276-4f97-45b0-9170-cf0b26ca6e04',
-      templateStepId: 90107730,
-      courseVersion: '2.0.1.0',
-      stepNo: 2,
-      stepName: '阅读处方标签',
-      stepTypeId: 8,
-      stepTypeName: '阅读',
-      children: [{
-        collapsed: true,
-        id: 'student_activity!9e47797b-6c49-44b2-8aeb-e1b72babb333'
-      }, {
-        collapsed: true,
-        id: 'student_activity!ea9661ad-c090-4537-b255-8a095597444a'
-      }, {
-        collapsed: true,
-        id: 'student_activity!3423ca69-d3f0-4d90-bf0c-530c3ef4ad74'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_lesson!3221ce52-6aee-48d2-a901-8aa0b65e0a0b'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_step_progress!9e8d4276-4f97-45b0-9170-cf0b26ca6e04'
-      },
-      isTemplate: false,
-      itemTypeId: 9,
-      maxAge: 86400,
-      lastModified: 1561470431523,
-      collapsed: false,
-      id: 'student_step!9e8d4276-4f97-45b0-9170-cf0b26ca6e04'
-    }, {
       studentCourseId: 'ee414fca-d98b-49fc-a53d-7dbba3387980',
       studentCourse: {
         collapsed: true,
@@ -259,215 +262,216 @@ export default {
         collapsed: true,
         id: 'student_level!15603093-4491-4d85-a509-f3aad0890067'
       },
-      studentUnitId: '01de9e49-2136-449c-a42e-4ca529b0d434',
+      studentUnitId: '36fde6cb-d07a-4383-a90c-e22a60bfc2a8',
       studentUnit: {
         collapsed: true,
-        id: 'student_unit!01de9e49-2136-449c-a42e-4ca529b0d434'
+        id: 'student_unit!36fde6cb-d07a-4383-a90c-e22a60bfc2a8'
       },
-      studentLessonId: '04c4670c-778d-41bd-8b13-8c8dce95a106',
+      studentLessonId: 'f0d31ea2-aa49-4f3a-a151-060f0f7f5c27',
       studentLesson: {
         collapsed: true,
-        id: 'student_lesson!04c4670c-778d-41bd-8b13-8c8dce95a106'
+        id: 'student_lesson!f0d31ea2-aa49-4f3a-a151-060f0f7f5c27'
       },
       collapsed: false,
       id: 'student_course_enrollment!ee414fca-d98b-49fc-a53d-7dbba3387980'
     }, {
-      templateUnitId: 30003005,
+      studentUnitId: '0640db94-03d3-496d-b1d8-3130936d0b7c',
+      templateUnitId: 30002998,
       courseVersion: '2.0.1.0',
       unitNo: 6,
-      unitName: '获得一个服务供应商',
+      unitName: '衣服与服装',
       unitImage: {
         collapsed: true,
-        id: 'media!176786'
+        id: 'media!176792'
       },
-      legacyUnitId: 1988,
+      legacyUnitId: 1817,
       children: [{
         collapsed: true,
-        id: 'student_lesson!template_lesson;40013229'
+        id: 'student_lesson!81c1a5a9-2bff-4a39-b1f4-dde53f91d4e8'
       }, {
         collapsed: true,
-        id: 'student_lesson!template_lesson;40013230'
+        id: 'student_lesson!a6109d6d-d390-4ec7-a746-0e770ed7cd5b'
       }, {
         collapsed: true,
-        id: 'student_lesson!template_lesson;40013231'
+        id: 'student_lesson!c7926d30-f6db-4964-8c3b-5a86aab7b26e'
       }, {
         collapsed: true,
-        id: 'student_lesson!template_lesson;40013232'
+        id: 'student_lesson!b1c394f4-3f5b-45bf-be0c-e1daf2b7a851'
       }],
       parent: {
         collapsed: true,
-        id: 'student_level!template_level;20000753'
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
       },
       progress: {
         collapsed: true,
-        id: 'student_unit_progress!template_unit;30003005'
-      },
-      isTemplate: true,
-      itemTypeId: 3,
-      maxAge: 86400,
-      lastModified: 1562286288261,
-      collapsed: false,
-      id: 'student_unit!template_unit;30003005'
-    }, {
-      templateUnitId: 30003004,
-      courseVersion: '2.0.1.0',
-      unitNo: 5,
-      unitName: '商务方案',
-      unitImage: {
-        collapsed: true,
-        id: 'media!176785'
-      },
-      legacyUnitId: 1987,
-      children: [{
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013221'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013222'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013223'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013224'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_level!template_level;20000753'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_unit_progress!template_unit;30003004'
-      },
-      isTemplate: true,
-      itemTypeId: 3,
-      maxAge: 86400,
-      lastModified: 1562286288261,
-      collapsed: false,
-      id: 'student_unit!template_unit;30003004'
-    }, {
-      templateUnitId: 30003003,
-      courseVersion: '2.0.1.0',
-      unitNo: 4,
-      unitName: '商务社交',
-      unitImage: {
-        collapsed: true,
-        id: 'media!176784'
-      },
-      legacyUnitId: 1986,
-      children: [{
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013488'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013489'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013490'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013491'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_level!template_level;20000753'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_unit_progress!template_unit;30003003'
-      },
-      isTemplate: true,
-      itemTypeId: 3,
-      maxAge: 86400,
-      lastModified: 1562286288261,
-      collapsed: false,
-      id: 'student_unit!template_unit;30003003'
-    }, {
-      templateUnitId: 30003002,
-      courseVersion: '2.0.1.0',
-      unitNo: 3,
-      unitName: '问题与解决办法',
-      unitImage: {
-        collapsed: true,
-        id: 'media!176783'
-      },
-      legacyUnitId: 1985,
-      children: [{
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013217'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013218'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013219'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!template_lesson;40013220'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_level!template_level;20000753'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_unit_progress!template_unit;30003002'
-      },
-      isTemplate: true,
-      itemTypeId: 3,
-      maxAge: 86400,
-      lastModified: 1562286288261,
-      collapsed: false,
-      id: 'student_unit!template_unit;30003002'
-    }, {
-      studentUnitId: '538e56e3-dbec-419b-8535-47e5656a431f',
-      templateUnitId: 30003000,
-      courseVersion: '2.0.1.0',
-      unitNo: 1,
-      unitName: '工作交流',
-      unitImage: {
-        collapsed: true,
-        id: 'media!176780'
-      },
-      legacyUnitId: 1983,
-      children: [{
-        collapsed: true,
-        id: 'student_lesson!e0c192a6-338e-4b85-b226-1fcba952733d'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!e64cd2b2-1d94-4980-89e9-89bb9b181767'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!fe7df17b-0451-4316-b655-4beb2e4a591b'
-      }, {
-        collapsed: true,
-        id: 'student_lesson!37bd5cab-0510-40cc-8d59-1cb9605cea87'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_level!15603093-4491-4d85-a509-f3aad0890067'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_unit_progress!538e56e3-dbec-419b-8535-47e5656a431f'
+        id: 'student_unit_progress!0640db94-03d3-496d-b1d8-3130936d0b7c'
       },
       isTemplate: false,
       itemTypeId: 3,
       maxAge: 86400,
-      lastModified: 1561959930270,
+      lastModified: 1562405147093,
       collapsed: false,
-      id: 'student_unit!538e56e3-dbec-419b-8535-47e5656a431f'
+      id: 'student_unit!0640db94-03d3-496d-b1d8-3130936d0b7c'
+    }, {
+      studentUnitId: '6fafbc99-8354-4f27-a32c-f59e1887c5e0',
+      templateUnitId: 30002997,
+      courseVersion: '2.0.1.0',
+      unitNo: 5,
+      unitName: '电影',
+      unitImage: {
+        collapsed: true,
+        id: 'media!176791'
+      },
+      legacyUnitId: 1816,
+      children: [{
+        collapsed: true,
+        id: 'student_lesson!587a35fb-bf85-4cce-94a0-36f1de6e9321'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!3deaadc2-f58a-4eb9-845a-68a08b0dc9c1'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!dfbf4609-5994-496e-8b32-d8744818f877'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!fe268b31-7f63-463c-8686-effa52fb57f5'
+      }],
+      parent: {
+        collapsed: true,
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_unit_progress!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
+      },
+      isTemplate: false,
+      itemTypeId: 3,
+      maxAge: 86400,
+      lastModified: 1561955264147,
+      collapsed: false,
+      id: 'student_unit!6fafbc99-8354-4f27-a32c-f59e1887c5e0'
+    }, {
+      studentUnitId: 'e4cd3ae7-2998-47d2-8e8f-135d87cc9966',
+      templateUnitId: 30002995,
+      courseVersion: '2.0.1.0',
+      unitNo: 3,
+      unitName: '讲述故事',
+      unitImage: {
+        collapsed: true,
+        id: 'media!176789'
+      },
+      legacyUnitId: 1814,
+      children: [{
+        collapsed: true,
+        id: 'student_lesson!d993320f-2880-43a3-83a8-23cf1e1c3255'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!ef94c0e0-81ea-4a4c-9e0f-4db005914132'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!efbbb09f-b1a8-4ed8-971c-2364e2fc236e'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!f8eb8c7c-bbba-4db4-b941-a1a265605a82'
+      }],
+      parent: {
+        collapsed: true,
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_unit_progress!e4cd3ae7-2998-47d2-8e8f-135d87cc9966'
+      },
+      isTemplate: false,
+      itemTypeId: 3,
+      maxAge: 86400,
+      lastModified: 1562578968020,
+      collapsed: false,
+      id: 'student_unit!e4cd3ae7-2998-47d2-8e8f-135d87cc9966'
+    }, {
+      studentUnitId: 'c9427f27-ff1e-425f-93e0-b369adfb45e5',
+      templateUnitId: 30002994,
+      courseVersion: '2.0.1.0',
+      unitNo: 2,
+      unitName: '做决定',
+      unitImage: {
+        collapsed: true,
+        id: 'media!176788'
+      },
+      legacyUnitId: 1813,
+      children: [{
+        collapsed: true,
+        id: 'student_lesson!6a33d537-99fc-447d-ad59-6a25d851a0b8'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!8160705c-3458-4284-84f8-4bea7576a651'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!fc4e985d-fec8-48c6-a3b8-3e04aa7f2a8d'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!42296cea-897a-48fa-a632-76169689fccf'
+      }],
+      parent: {
+        collapsed: true,
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_unit_progress!c9427f27-ff1e-425f-93e0-b369adfb45e5'
+      },
+      isTemplate: false,
+      itemTypeId: 3,
+      maxAge: 86400,
+      lastModified: 1562576479767,
+      collapsed: false,
+      id: 'student_unit!c9427f27-ff1e-425f-93e0-b369adfb45e5'
+    }, {
+      studentUnitId: 'b68da133-351f-4672-9ec1-801d1b5517fb',
+      templateUnitId: 30002993,
+      courseVersion: '2.0.1.0',
+      unitNo: 1,
+      unitName: '旅行',
+      unitImage: {
+        collapsed: true,
+        id: 'media!176787'
+      },
+      legacyUnitId: 1812,
+      children: [{
+        collapsed: true,
+        id: 'student_lesson!d531887d-544f-4565-b2c2-ef9ada85ceb5'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!32d612b2-1785-46c3-9828-d66e1d4a16f7'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!fa5d9842-49bd-4789-96cc-1bdcc068f012'
+      }, {
+        collapsed: true,
+        id: 'student_lesson!d2b53519-9805-4224-af61-e73202d1e630'
+      }],
+      parent: {
+        collapsed: true,
+        id: 'student_level!646585e8-6558-4796-b0c1-b45dd9525e7b'
+      },
+      progress: {
+        collapsed: true,
+        id: 'student_unit_progress!b68da133-351f-4672-9ec1-801d1b5517fb'
+      },
+      isTemplate: false,
+      itemTypeId: 3,
+      maxAge: 86400,
+      lastModified: 1562573064343,
+      collapsed: false,
+      id: 'student_unit!b68da133-351f-4672-9ec1-801d1b5517fb'
     }, {
       content: {
         grammarVideo: {
           scripts: []
         },
         presentations: [{
-          text: '<p>\n\t<strong>阅读处方标签</strong><br />\n\t&nbsp;</p>\n<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="600">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td colspan="2">\n\t\t\t\t药有不同形式-有如 **tablets**或**capsules**的固体药物，或如你用**teaspoons**服用的如**syrups**的液体药物。你将在处方标签上找到你的施药信息。<br />\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em>Take four <strong>tablets</strong>, twice a day. </em></td>\n\t\t\t<td>\n\t\t\t\t每次四片，每天两次。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em>The medicine comes in <strong>capsules</strong>. Take two every day.</em></td>\n\t\t\t<td>\n\t\t\t\t胶囊包装，每天两颗。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em>Take one <strong>teaspoon</strong>, after meals.&nbsp;&nbsp;</em></td>\n\t\t\t<td>\n\t\t\t\t餐后服用一匙。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t&nbsp;</td>\n\t\t\t<td>\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan="2">\n\t\t\t\t<p>\n\t\t\t\t\t&nbsp;</p>\n\t\t\t\t<p>\n\t\t\t\t\t标签也会提醒你有关的**side effects**, 你服药时遇到的难题。这会包括**drowsiness** 或**loss of appetite**。<br />\n\t\t\t\t\t&nbsp;</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em>The <strong>side effect</strong> of this medicine is that it may cause <strong>drowsiness</strong>.</em></td>\n\t\t\t<td>\n\t\t\t\t本药有副作用，可能引起昏睡。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em><strong>Side effects</strong> may include <strong>loss of appetite</strong>.</em></td>\n\t\t\t<td>\n\t\t\t\t副作用可能包括食欲不振。</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t&nbsp;</td>\n\t\t\t<td>\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td colspan="2">\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>\n\t&nbsp;</p>',
+          text: '<div>\n\t<div>\n\t\t<div>\n\t\t\t<strong>在餐馆询问账单和付账</strong><br />\n\t\t\t&nbsp;</div>\n\t</div>\n\t<div>\n\t\t<div>\n\t\t\t<table border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="700">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan="3">\n\t\t\t\t\t\t\t用这些表达来叫您的侍者来 **check**, 或 **bill**。<br />\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style="width: 5%;">\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/32/v/111432/GE_5.4.4.3.2_1_v2.mp3</td>\n\t\t\t\t\t\t<td style="width: 40%;">\n\t\t\t\t\t\t\t<em>Could I have the <strong>bill</strong>, please?</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t请把账单给我好吗？</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/33/v/111433/GE_5.4.4.3.2_2_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<em>We&#39;re ready for our <strong>check</strong>.&nbsp;</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t我们可以付账了。</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan="3">\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t如果不确定餐馆是否接受信用卡，你可以询问。<br />\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/34/v/111434/GE_5.4.4.3.2_3_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<em>Do you take credit cards?&nbsp;&nbsp;</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t你们接受信用卡付款吗？</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td colspan="3">\n\t\t\t\t\t\t\t<br />\n\t\t\t\t\t\t\t当您讨论 **tip*时，用动词**leave**。<br />\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/35/v/111435/GE_5.4.4.3.2_4_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\tA: <em>How much should we <strong>leav</strong>e for a <strong>tip</strong>?</em><br />\n\t\t\t\t\t\t\tB:<em> I think 15% is good.&nbsp;</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t小费我们应该给多少？<br />\n\t\t\t\t\t\t\t我觉得 15% 就可以了。</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t&nbsp;</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\thttps://cns2.ef-cdn.com/Juno/11/14/31/v/111431/GE_5.4.4.3.2_5_v2.mp3</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\tA: <em>Did you <strong>leave</strong> a <strong>tip</strong>?&nbsp;</em>&nbsp;&nbsp;&nbsp;<br />\n\t\t\t\t\t\t\tB:<em> I <strong>left</strong> 20 percent. Everything was excellent!</em></td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t你给小费了吗？<br />\n\t\t\t\t\t\t\t我留了 20% 的小费。各方面都非常棒！</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t<p>\n\t\t\t\t&nbsp;</p>\n\t\t\t<p>\n\t\t\t\t&nbsp;&nbsp;</p>\n\t\t\t<!-- InstanceEndEditable --></div>\n\t</div>\n</div>\n<p>\n\t&nbsp;</p>',
           layoutType: 'Table'
-        }, {
-          text: '<table border="0" cellpadding="0" cellspacing="0" style="width: 835px;" width="600">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td colspan="2">\n\t\t\t\t标签上也许会告诉你药的用量-**maximum dosage** -和谁**suitable for**该药-成年人或是小孩。<br />\n\t\t\t\t&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em><strong>Maximum dosage:</strong>&nbsp;four capsules per day</em></td>\n\t\t\t<td>\n\t\t\t\t最大用量：每日四颗</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<em><strong>Suitable for:&nbsp;</strong>adults and children over 12 years old</em></td>\n\t\t\t<td>\n\t\t\t\t适用：成人和 12 岁以上的孩童</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<p>\n\t&nbsp;</p>',
-          layoutType: 'TextOnly'
         }]
       },
       templateCode: 'LanguagePresentationNew',
@@ -476,53 +480,7 @@ export default {
       },
       maxAge: 86400,
       collapsed: false,
-      id: 'activity_content!276026'
-    }, {
-      studentLevelId: '15603093-4491-4d85-a509-f3aad0890067',
-      templateLevelId: 20000753,
-      courseVersion: '2.0.1.0',
-      levelCode: '4',
-      levelNo: 6,
-      levelName: '6-初级',
-      legacyLevelId: 547,
-      enrollDate: '\/Date(1559375507000-0400)\/',
-      levelTest: {
-        collapsed: true,
-        id: 'student_leveltest!template_leveltest;210000054'
-      },
-      children: [{
-        collapsed: true,
-        id: 'student_unit!538e56e3-dbec-419b-8535-47e5656a431f'
-      }, {
-        collapsed: true,
-        id: 'student_unit!01de9e49-2136-449c-a42e-4ca529b0d434'
-      }, {
-        collapsed: true,
-        id: 'student_unit!template_unit;30003002'
-      }, {
-        collapsed: true,
-        id: 'student_unit!template_unit;30003003'
-      }, {
-        collapsed: true,
-        id: 'student_unit!template_unit;30003004'
-      }, {
-        collapsed: true,
-        id: 'student_unit!template_unit;30003005'
-      }],
-      parent: {
-        collapsed: true,
-        id: 'student_course!ee414fca-d98b-49fc-a53d-7dbba3387980'
-      },
-      progress: {
-        collapsed: true,
-        id: 'student_level_progress!template_level;20000753'
-      },
-      isTemplate: false,
-      itemTypeId: 2,
-      maxAge: 86400,
-      lastModified: 1562196305603,
-      collapsed: false,
-      id: 'student_level!template_level;20000753'
+      id: 'activity_content!275563'
     }, {
       result: ['/campus/mypage/home', '/customerservice/contactus/inschool', '/customerservice/dashboard', '/customerservice/helpcenter', '/evc/gl', '/evc/mybookings', '/logout/logout.aspx', '/school/anat/progressreport', '/school/changecourse', '/school/content/activitypreview.aspx', '/school/content/leveltest.aspx', '/school/course/certificateboard.aspx', '/school/course/progressreportv2.aspx', '/school/e12', '/school/evc/pl', '/school/feedback/writing', '/school/partners/lls/myaccountv2.aspx', '/school/progressreport', '/school/studyplan', '/school/studyplan/evc/mobile', '/school/studytool', '/school/studytools/notebook2', '/school/studytools/pronounciation.aspx', '/school/studytools/tofeltoeic/toeictofelcontainer.aspx', '/school/studyunit', '/translator', '/school/mypage/ec', '/school/mypage/mobile', '/school/smart', '/school/mini', '/school/englishcenters/allecapps', '/school/englishcenters/nocoupon', '/school/englishcenters/smart15app', '/school/englishcenters/welcome', '/school/englishcenters/welcome/confirm', '/school/basicinfo.aspx', '/school/myaccount2.aspx', '/school/remindersetting.aspx', '/school/manageemailsubscription.aspx', '/school/studentwriting', '/chat/friends', '/ecplatform/page/booking-list', '/ecplatform', '/smartpoint'],
       maxAge: 86400,
