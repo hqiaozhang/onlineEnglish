@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-05 17:50:38
+ * @Last Modified time: 2019-07-08 16:37:18
  */
 
 import React, {Component} from 'react';
@@ -32,8 +32,8 @@ class Studyunit extends Component {
     this.state = {
       steps: [],
       cardActive: 0,
-      isShowDetails: sessionStorage.getItem('isShowDetails') !== 'false',
-      utilDetail: utilDetail ? JSON.parse(utilDetail) : [],
+      isShowDetails: sessionStorage.getItem('isShowDetails') === 'true',
+      utilDetail: utilDetail === 'undefined' ? {} : JSON.parse(utilDetail),
       dropdown: false,
 
       dropdownList: ['1-Beginner', '2-Beginner', '3-Beginner', '4-Elementary', '5-Elementary', '6-Elementary'],
@@ -57,6 +57,7 @@ class Studyunit extends Component {
     const {cardActive} = this.state;
     const {utilDetails, unitId, currentLevel} = this.props;
     const utilDetail = utilDetails[`unit${currentLevel}_${unitId}`][`u${unitId}_${cardActive}0${index + 1}`];
+
     sessionStorage.setItem('utilDetail', JSON.stringify(utilDetail));
     sessionStorage.setItem('isShowDetails', true);
     this.setState({
@@ -108,7 +109,6 @@ class Studyunit extends Component {
     dispatch({type: 'INITUNITID'});
     dispatch({type: 'CHANGECURRENTLEVEL', level: index + 1});
     this.setState({
-      // currentLevelDoc: menu,
       steps: [],
       cardActive: ''
     });
