@@ -8,6 +8,7 @@ import App from '@/containers/app';
 import Docs from '@/containers/docs';
 import Studytools from '@/containers/Studytools';
 import Studyunit from '@/containers/studyunit';
+import WordCard from '@/containers/wordCard';
 
 const store = configureStore();
 const Router = ({component: Component, children, ...rest}) => (
@@ -30,6 +31,7 @@ const Root = () => (
             <Router path="/docs" component={Docs} />
             <Router path="/studyunit" component={Studyunit} />
             <Router path="/studytools" component={Studytools} />
+            <Router path="/wordCard" component={WordCard} />
           </Switch>
         </div>
       </div>
