@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-08 21:40:34
+ * @Last Modified time: 2019-07-23 13:48:29
  */
 
 export default{
@@ -27,23 +27,24 @@ export default{
               {
                 title: '词汇',
                 contain: 'Events',
-                ch: '',
+                ch: '演出',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: 'Gerunds and infinitives',
-                ch: ''
+                ch: '动名词和不定式'
               }, {
                 title: '表达',
                 contain: 'Expressing ability',
-                ch: ''
+                ch: '表述能力'
               }, {
                 title: '表达',
                 contain: 'Asking about and describing options',
-                ch: ''
+                ch: '询问和描述选项'
               }, {
                 title: '最终任务',
                 contain: 'Describing entertainment options',
-                ch: ''
+                ch: '描述娱乐选项'
               }
             ],
           }, {
@@ -55,23 +56,24 @@ export default{
               {
                 title: '词汇',
                 contain: 'Places for events',
-                ch: '',
+                ch: '演出地点',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: 'Prepositions of time and place',
-                ch: ''
+                ch: '时间和地点介词'
               }, {
                 title: '表达',
                 contain: 'Asking for help',
-                ch: ''
+                ch: '请求帮助'
               }, {
                 title: '阅读',
                 contain: 'Reading about events',
-                ch: ''
+                ch: '阅读演出信息'
               }, {
                 title: '最终任务',
                 contain: 'Talking about upcoming events',
-                ch: ''
+                ch: '谈论即将发生的活动'
               }
             ]
 
@@ -84,23 +86,24 @@ export default{
               {
                 title: '词汇',
                 contain: 'Adjectives to describe events',
-                ch: '',
+                ch: '描述演出的形容词',
               }, {
                 title: '语法',
                 contain: "'Why' and 'because'",
-                ch: ''
+                ch: "'Why' 和 'because'"
               }, {
                 title: '词汇',
                 contain: 'Movie genres',
-                ch: ''
+                ch: '电影类型',
+                isDetail: false,
               }, {
                 title: '表达',
                 contain: 'Suggesting activities',
-                ch: ''
+                ch: '建议活动'
               }, {
                 title: '最终任务',
                 contain: 'Planning a night out with friends',
-                ch: ''
+                ch: '计划与朋友晚上外出'
               }
             ]
           }, {
@@ -112,19 +115,19 @@ export default{
               {
                 title: '语法',
                 contain: 'Future with the simple present',
-                ch: '',
+                ch: '一般现在时表示的将来时',
               }, {
                 title: '表达',
                 contain: 'Asking for information about movies',
-                ch: ''
+                ch: '询问电影信息'
               }, {
                 title: '表达',
                 contain: 'Expressing irritation',
-                ch: ''
+                ch: '表达恼怒'
               }, {
                 title: '最终任务',
                 contain: 'Going to the movies',
-                ch: ''
+                ch: '看电影'
               }
             ]
           }
@@ -143,19 +146,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'Physical descriptions of people',
-                ch: '',
+                ch: '人的外形描述',
               }, {
                 title: '语法',
                 contain: 'Adjective order',
-                ch: ''
+                ch: '形容词的顺序'
               }, {
                 title: '表达',
                 contain: 'Talking about people',
-                ch: ''
+                ch: '谈论他人'
               }, {
                 title: '最终任务',
                 contain: 'Describing someone you know',
-                ch: ''
+                ch: '描述某个您认识的人'
               }
             ],
           }, {
@@ -167,19 +170,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'Relationships',
-                ch: '',
+                ch: '关系',
               }, {
                 title: '语法',
                 contain: 'Describing relationships',
-                ch: ''
+                ch: '描述关系'
               }, {
                 title: '表达',
                 contain: 'Talking about a relationship',
-                ch: ''
+                ch: '谈论一段关系'
               }, {
                 title: '最终任务',
                 contain: 'Describing relationships',
-                ch: ''
+                ch: '描述关系'
               }
             ]
           }, {
@@ -191,19 +194,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'Describing employees',
-                ch: '',
+                ch: '描述员工',
               }, {
                 title: '语法',
                 contain: "'Too' and 'enough'",
-                ch: ''
+                ch: "'Too' 和 'enough'"
               }, {
                 title: '表达',
                 contain: "Opinions with 'I think that'",
-                ch: ''
+                ch: "用'I think that' 来提建议"
               }, {
                 title: '最终任务',
                 contain: 'Evaluating employees',
-                ch: ''
+                ch: '评估员工'
               }
             ]
           }, {
@@ -215,19 +218,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'Adverbs at work',
-                ch: '',
+                ch: '工作中用到的副词',
               }, {
                 title: '语法',
                 contain: "'So' and 'such'",
-                ch: ''
+                ch: "'So' 和 'such'"
               }, {
                 title: '写作',
                 contain: 'Recommending colleagues',
-                ch: ''
+                ch: '推荐同事'
               }, {
                 title: '最终任务',
                 contain: 'Giving a recommendation',
-                ch: ''
+                ch: '给出推荐'
               }
             ]
           }
@@ -246,23 +249,24 @@ export default{
               {
                 title: '词汇',
                 contain: 'Daily activities',
-                ch: '',
+                ch: '日常活动',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: 'Past tense verbs',
-                ch: ''
+                ch: '动词过去时'
               }, {
                 title: '表达',
                 contain: 'Past time expressions',
-                ch: ''
+                ch: '过去时间的表达'
               }, {
                 title: '表达',
                 contain: 'Asking questions about past events',
-                ch: ''
+                ch: '询问过去的事件/活动'
               }, {
                 title: '最终任务',
                 contain: "Asking about someone's week",
-                ch: ''
+                ch: '询问别人一周的情况'
               }
             ],
           }, {
@@ -274,23 +278,23 @@ export default{
               {
                 title: '语法',
                 contain: 'Irregular past tense verbs',
-                ch: '',
+                ch: '不规则动词的过去时',
               }, {
                 title: '词汇',
                 contain: 'Activities in the past',
-                ch: ''
+                ch: '过去的活动'
               }, {
                 title: '阅读',
                 contain: 'Opening a conversation',
-                ch: ''
+                ch: '开启对话'
               }, {
                 title: '阅读',
                 contain: ' Changing a topic',
-                ch: ''
+                ch: '改变话题'
               }, {
                 title: '最终任务',
                 contain: 'Talking about your weekend',
-                ch: ''
+                ch: '谈论你的周末'
               }
             ]
           }, {
@@ -302,23 +306,23 @@ export default{
               {
                 title: '词汇',
                 contain: 'News vocabulary',
-                ch: '',
+                ch: '新闻词汇',
               }, {
                 title: '语法',
                 contain: 'Indefinite pronouns',
-                ch: ''
+                ch: '不定代词'
               }, {
                 title: '表达',
                 contain: 'Sequencing a narrative',
-                ch: ''
+                ch: '排列叙事的顺序'
               }, {
                 title: '阅读',
                 contain: 'Previewing a news article',
-                ch: ''
+                ch: '预览新闻文章'
               }, {
                 title: '最终任务',
                 contain: 'Telling a story',
-                ch: ''
+                ch: '讲故事'
               }
             ]
           }, {
@@ -330,19 +334,20 @@ export default{
               {
                 title: '词汇',
                 contain: 'Hiking vocabulary',
-                ch: '',
+                ch: '远足词汇',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: 'Asking past tense questions',
-                ch: ''
+                ch: '提问过去时态的问题'
               }, {
                 title: '表达',
                 contain: 'Active listening',
-                ch: ''
+                ch: '积极聆听'
               }, {
                 title: '最终任务',
                 contain: 'Listening to a story',
-                ch: ''
+                ch: '听故事'
               }
             ]
           }
@@ -361,19 +366,20 @@ export default{
               {
                 title: '词汇',
                 contain: 'Life events',
-                ch: '',
+                ch: '人生事件',
               }, {
                 title: '语法',
                 contain: 'Past tense verbs for life events',
-                ch: ''
+                ch: '用于人生事件的过去时动词'
               }, {
                 title: '听力',
                 contain: 'Listening for details',
-                ch: ''
+                ch: '聆听细节',
+
               }, {
                 title: '最终任务',
                 contain: 'Talking about your life',
-                ch: ''
+                ch: '谈论你的人生'
               }
             ],
           }, {
@@ -385,19 +391,20 @@ export default{
               {
                 title: '词汇',
                 contain: "'Get' for life events",
-                ch: '',
+                ch: "用 'Get' 表述人生事件",
               }, {
                 title: '语法',
                 contain: "Clauses with 'when'",
-                ch: ''
+                ch: "when' 引导的从句"
               }, {
                 title: '听力',
                 contain: 'Listening for key words',
-                ch: ''
+                ch: '聆听关键词',
+                isDetail: false,
               }, {
                 title: '最终任务',
                 contain: 'Discussing important life events',
-                ch: ''
+                ch: '讨论重大人生事件'
               }
             ]
           }, {
@@ -409,19 +416,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'More life events',
-                ch: '',
+                ch: '更多人生事件',
               }, {
                 title: '语法',
                 contain: "Clauses with 'after'",
-                ch: ''
+                ch: "after' 引导的从句"
               }, {
                 title: '阅读',
                 contain: "Reading about someone's life",
-                ch: ''
+                ch: '阅读关于某人的人生'
               }, {
                 title: '最终任务',
                 contain: 'Going to a wedding',
-                ch: ''
+                ch: '参加婚礼'
               }
             ]
           }, {
@@ -433,19 +440,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'Interviews',
-                ch: '',
+                ch: '面试',
               }, {
                 title: '表达',
                 contain: 'Interview expressions',
-                ch: ''
+                ch: '面试表达'
               }, {
                 title: '听力',
                 contain: 'Reduced forms',
-                ch: ''
+                ch: '省略形式'
               }, {
                 title: '最终任务',
                 contain: 'Interviewing for a job',
-                ch: ''
+                ch: '面试工作'
               }
             ]
           }
@@ -464,22 +471,23 @@ export default{
               {
                 title: '语法',
                 contain: "Recent past with 'just'",
-                ch: '',
+                ch: "使用 'just' 表示最近的过去",
               }, {
                 title: '表达',
                 contain: 'Changing the topic of conversation',
-                ch: ''
+                ch: '更改对话主题'
               }, {
                 title: '语法',
                 contain: 'Adverbs of probability',
-                ch: ''
+                ch: '可能性副词'
               }, {
                 title: '表达',
-                contain: 'Making and responding to invitations'
+                contain: 'Making and responding to invitations',
+                ch: '提出及回应邀请'
               }, {
                 title: '最终任务',
                 contain: 'Talking about your life',
-                ch: ''
+                ch: '邀请某人到你家'
               }
             ],
           }, {
@@ -489,21 +497,25 @@ export default{
             id: 2,
             steps: [
               {
-                title: '词汇',
-                contain: "'Get' for life events",
-                ch: '',
+                title: '表达',
+                contain: 'Welcoming guests',
+                ch: '欢迎客人',
               }, {
                 title: '语法',
-                contain: "Clauses with 'when'",
-                ch: ''
+                contain: 'Adjectives with infinitives',
+                ch: '形容词搭配不定式'
               }, {
-                title: '听力',
-                contain: 'Listening for key words',
-                ch: ''
+                title: '表达',
+                contain: 'Making polite offers and requests',
+                ch: '礼貌地提议和请求'
+              }, {
+                title: '表达',
+                contain: 'Reacting to good and bad news',
+                ch: '听到好消息和坏消息的反应'
               }, {
                 title: '最终任务',
-                contain: 'Discussing important life events',
-                ch: ''
+                contain: 'Welcoming someone to your home',
+                ch: '欢迎某人到你家'
               }
             ]
           }, {
@@ -515,19 +527,19 @@ export default{
               {
                 title: '词汇',
                 contain: 'Adjective synonyms',
-                ch: '',
+                ch: '形容词同义词',
               }, {
                 title: '口语',
                 contain: 'American English and British English',
-                ch: ''
+                ch: '美式英语和英式英语'
               }, {
                 title: '表达',
                 contain: "Leaving someone's home",
-                ch: ''
+                ch: '离开某人的家'
               }, {
                 title: '最终任务',
                 contain: 'Parting at the end of an evening',
-                ch: ''
+                ch: '夜晚结束时告别'
               }
             ]
           }, {
@@ -539,19 +551,19 @@ export default{
               {
                 title: '语法',
                 contain: "'Hope to' and 'hope that'",
-                ch: '',
+                ch: "'Hope to' 和 'hope that'",
               }, {
                 title: '表达',
                 contain: 'Talking about a fun activity',
-                ch: ''
+                ch: '谈论有趣的活动'
               }, {
                 title: '写作',
                 contain: 'Writing thank-you letters',
-                ch: ''
+                ch: '撰写感谢信'
               }, {
                 title: '最终任务',
                 contain: 'Writing a thank-you letter',
-                ch: ''
+                ch: '撰写感谢信'
               }
             ]
           }
@@ -570,22 +582,24 @@ export default{
               {
                 title: '词汇',
                 contain: 'Geographical locations',
-                ch: '',
+                ch: '地理位置',
+                isDetail: false,
               }, {
                 title: '表达',
                 contain: 'Weather, seasons and temperature',
-                ch: ''
+                ch: '天气、季节和温度'
               }, {
                 title: '阅读',
                 contain: 'Travel brochures',
-                ch: ''
+                ch: '旅游手册'
               }, {
                 title: '表达',
-                contain: 'Talking about places'
+                contain: 'Talking about places',
+                ch: '谈论地方'
               }, {
                 title: '最终任务',
                 contain: 'Getting information about a destination',
-                ch: ''
+                ch: '获取目的地信息'
               }
             ],
           }, {
@@ -597,19 +611,20 @@ export default{
               {
                 title: '词汇',
                 contain: 'Vacation activities',
-                ch: '',
+                ch: '度假活动',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: "'Going to' vs. 'will' for future",
-                ch: ''
+                ch: '谈论地方'
               }, {
                 title: '表达',
                 contain: 'Expressing doubt',
-                ch: ''
+                ch: '表达疑虑'
               }, {
                 title: '最终任务',
                 contain: 'Discussing vacation plans',
-                ch: ''
+                ch: '讨论度假计划'
               }
             ]
           }, {
@@ -621,23 +636,23 @@ export default{
               {
                 title: '语法',
                 contain: "'Will' for offering or volunteering",
-                ch: '',
+                ch: "用 'Will' 表达提议或主动做某事",
               }, {
                 title: '表达',
                 contain: 'Farewell language',
-                ch: ''
+                ch: '告别用语'
               }, {
                 title: '语法',
                 contain: "The verbs 'try,' 'remember' and 'stop'",
-                ch: ''
+                ch: "动词 'try'、'remember' 和 'stop'"
               }, {
                 title: '听力',
                 contain: 'Reduced forms',
-                ch: ''
+                ch: '省略形式'
               }, {
                 title: '最终任务',
                 contain: 'Seeing someone off',
-                ch: ''
+                ch: '送别某人'
               }
             ]
           }, {
@@ -649,23 +664,24 @@ export default{
               {
                 title: '词汇',
                 contain: 'Verbs for vacation',
-                ch: '',
+                ch: '与度假相关的动词',
+                isDetail: false,
               }, {
                 title: '语法',
                 contain: "'So' for describing a result",
-                ch: ''
+                ch: "用 'So' 描述结果"
               }, {
                 title: '表达',
                 contain: 'Expressing purpose',
-                ch: ''
+                ch: '表达目的'
               }, {
                 title: '写作',
                 contain: ' Using appropriate register',
-                ch: ''
+                ch: '使用恰当的语体'
               }, {
                 title: '最终任务',
                 contain: 'Writing a postcard',
-                ch: ''
+                ch: '撰写明信片'
               }
             ]
           }

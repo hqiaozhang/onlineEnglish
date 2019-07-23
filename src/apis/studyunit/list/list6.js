@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（第六单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-08 15:38:17
+ * @Last Modified time: 2019-07-23 10:00:15
  */
 
 export default{
@@ -351,31 +351,108 @@ export default{
       }, {
         id: 4,
         topic: 'Business socializing',
+        ch: '商务社交',
         list: [
           {
             img: 'https://cns1.ef-cdn.com/Juno/13/00/87/v/130087/GE_6.4.1_welcoming_web.jpg',
             title: 'Welcoming business guests',
             chTitle: '欢迎商务来宾',
             id: 1,
-            steps: []
+            steps: [
+              {
+                title: '语法',
+                contain: 'Negative tag questions',
+                ch: '否定反意疑问句',
+              }, {
+                title: '口语',
+                contain: 'Intonation with tag questions',
+                ch: '反意疑问句的语调'
+              }, {
+                title: '口语',
+                contain: 'Conversation management',
+                ch: '对话管理'
+              }, {
+                title: '表达',
+                contain: 'Welcoming guests',
+                ch: '欢迎来宾',
+              }, {
+                title: '最终任务',
+                contain: 'Welcoming business guests',
+                ch: '欢迎商务来宾'
+              }
+            ]
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/13/00/88/v/130088/GE_6.4.2_zttending_web.jpg',
             title: 'Attending a networking event',
             chTitle: '参加社交活动',
             id: 2,
-            steps: []
+            steps: [
+              {
+                title: '词汇',
+                contain: 'Topics for conversation',
+                ch: '',
+              }, {
+                title: '口语',
+                contain: 'Making small talk',
+                ch: ''
+              }, {
+                title: '表达',
+                contain: 'Finding common ground',
+                ch: ''
+              }, {
+                title: '最终任务',
+                contain: 'Attending a networking event',
+                ch: ''
+              }
+            ]
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/13/00/89/v/130089/GE_6.4.3_making_web.jpg',
             title: 'Making a business contact',
             chTitle: '商务联络',
             id: 3,
-            steps: []
+            steps: [
+              {
+                title: '词汇',
+                contain: 'Negative prefixes',
+                ch: '',
+              }, {
+                title: '表达',
+                contain: 'Giving information about your company',
+                ch: ''
+              }, {
+                title: '表达',
+                contain: 'Interrupting and responding',
+                ch: ''
+              }, {
+                title: '最终任务',
+                contain: 'Making a business contact',
+                ch: ''
+              }
+            ]
           }, {
             img: 'https://cns1.ef-cdn.com/Juno/51/09/15/v/510915/6.4.4.jpg',
             title: 'Summarizing a networking event',
             chTitle: '总结社交活动',
             id: 4,
-            steps: []
+            steps: [
+              {
+                title: '词汇',
+                contain: 'Affirmative tag questions',
+                ch: '',
+              }, {
+                title: '表达',
+                contain: 'Expressing a tentative opinion',
+                ch: ''
+              }, {
+                title: '表达',
+                contain: 'Summarizing',
+                ch: ''
+              }, {
+                title: '最终任务',
+                contain: 'Summarizing a networking event',
+                ch: ''
+              }
+            ]
           }
         ]
       }

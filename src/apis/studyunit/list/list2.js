@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程（单元学习）
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-05 16:07:42
+ * @Last Modified time: 2019-07-23 15:10:43
  */
 
 export default{
@@ -23,13 +23,49 @@ export default{
             title: 'Talking about schedules',
             chTitle: '谈论计划',
             id: 1,
-            steps: []
+            steps: [
+              {
+                title: '表达',
+                contain: 'Telling the time',
+                ch: ''
+              }, {
+                title: '词汇',
+                contain: 'Daily activities',
+                ch: ''
+              }, {
+                title: '表达',
+                contain: 'Talking about routines',
+                ch: ''
+              }, {
+                title: '最终任务',
+                contain: 'Talking about schedules',
+                ch: ''
+              }
+            ]
           }, {
             img: 'https://cns.ef-cdn.com/Juno/11/18/71/v/111871/GE_2.1.2_describing_web.jpg',
             title: 'Describing your weekend',
             chTitle: '描述您的周末',
             id: 2,
-            steps: []
+            steps: [
+              {
+                title: '表达',
+                contain: '',
+                ch: ''
+              }, {
+                title: '词汇',
+                contain: '',
+                ch: ''
+              }, {
+                title: '表达',
+                contain: '',
+                ch: ''
+              }, {
+                title: '最终任务',
+                contain: '',
+                ch: ''
+              }
+            ]
           }, {
             img: 'https://cns.ef-cdn.com/Juno/11/18/72/v/111872/GE_2.1.3_arranging_web.jpg',
             title: 'Arranging a meeting time',

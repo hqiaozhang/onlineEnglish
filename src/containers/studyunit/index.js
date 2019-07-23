@@ -4,7 +4,7 @@
  * @Email: 991034150@qq.com
  * @Description: 我的课程
  * @Last Modified by: zhanghongqiao
- * @Last Modified time: 2019-07-08 16:37:18
+ * @Last Modified time: 2019-07-23 14:52:30
  */
 
 import React, {Component} from 'react';
@@ -78,23 +78,18 @@ class Studyunit extends Component {
    * @description 点击上一页
    */
   handlePrev() {
-    this.props.dispatch({type: 'PREV', unitId: this.props.unitId});
-    this.setState({
-      steps: [],
-      cardActive: ''
-    });
+    this.resetSteps('PREV');
   }
   /**
    * @description 点击下一页
    */
   handleNext() {
-    this.props.dispatch({type: 'NEXT', unitId: this.props.unitId});
-    this.setState({
-      steps: [],
-      cardActive: ''
-    });
+    this.resetSteps('NEXT');
   }
-  // 点击单元下拉
+  /**
+   * @description 点击单元下拉
+   * @param {Boolean} falg 显示、隐藏状态
+   */
   handleDropdown(falg) {
     this.setState({
       dropdown: !falg
@@ -108,21 +103,39 @@ class Studyunit extends Component {
     const {dispatch} = this.props;
     dispatch({type: 'INITUNITID'});
     dispatch({type: 'CHANGECURRENTLEVEL', level: index + 1});
+    this.resetSteps();
+  }
+  /**
+   * @description 清空当前选择的
+   */
+  resetSteps(action) {
+    if (action) {
+      this.props.dispatch({type: action, unitId: this.props.unitId});
+    }
+
     this.setState({
       steps: [],
       cardActive: ''
     });
   }
   /**
+   * @description 获取所有数据
+   * @param {Number} level
+   */
+  requestData(level) {
+    const {dispatch} = this.props;
+    // 单元课程
+    dispatch(rquestStudyunit(level));
+    // 单元详情
+    dispatch(requestStudyunitDetails(level));
+  }
+  /**
    * @description render之后执行
    */
   componentDidMount() {
-    const {dispatch, currentLevel} = this.props;
-
-    // 单元课程
-    dispatch(rquestStudyunit(currentLevel));
-    // 单元详情
-    dispatch(requestStudyunitDetails(currentLevel));
+    const {currentLevel} = this.props;
+    // 获取数据
+    this.requestData(currentLevel);
   }
   componentWillReceiveProps(nextProps) {
     this.setState({
@@ -130,8 +143,7 @@ class Studyunit extends Component {
     });
     // 级别发生改变，重新获取数据
     if (nextProps.currentLevel !== this.props.currentLevel) {
-      this.props.dispatch(rquestStudyunit(nextProps.currentLevel));
-      this.props.dispatch(requestStudyunitDetails(nextProps.currentLevel));
+      this.requestData(nextProps.currentLevel);
     }
   }
   render() {
@@ -152,7 +164,11 @@ class Studyunit extends Component {
                 <ul className={`ets-chl-options-course ${dropdown ? 'show' : ''}`} >
                   {
                     dropdownList.map((menu, index) => (
-                      <li key={index} className={menu === currentLevelDoc ? 'ets-active' : ''} onClick={this.handleMenu.bind(this, menu, index)}>{menu}</li>
+                      <li
+                        key={index}
+                        className={menu === currentLevelDoc ? 'ets-active' : ''}
+                        onClick={this.handleMenu.bind(this, menu, index)}
+                      >{menu}</li>
                     ))
                   }
                 </ul>
